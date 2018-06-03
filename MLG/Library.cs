@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace MLG
 {
-    public class Class1
+    public class Question
     {
+        public string Task { get; set; }
     }
 }
