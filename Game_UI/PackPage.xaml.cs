@@ -20,6 +20,7 @@ namespace Game_UI
     /// </summary>
     public partial class PackPage : Page
     {
+        //здесь нужны пакеты из бд 
         public PackPage()
         {
             InitializeComponent();
