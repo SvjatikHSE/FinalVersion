@@ -8,11 +8,12 @@ namespace MLG
 {
     class Repository
     {
-        List<Package> packages;
-        List<User> users;
+        List<Package> packages=new List<Package>();
+        List<User> users=new List<User>();
 
         public void LoadData()
         {
+            users = new List<User>();
             packages = new List<Package>();
         }
 
