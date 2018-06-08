@@ -8,7 +8,8 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PackPage">
 
-    <Grid Background="Black"  >
-        <ListBox Name="PackBox" Margin="10"  Opacity="0.5"/>
+    <Grid  >
+       
+
     </Grid>
 </Page>

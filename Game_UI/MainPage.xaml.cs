@@ -38,6 +38,7 @@ namespace Game_of_brains_UI
         private void TeamName_GotFocus(object sender, RoutedEventArgs e)
         {
             TeamName.Text = "";
+            
         }
     }
 }

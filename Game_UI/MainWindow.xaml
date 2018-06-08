@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Game_UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Source="MainPage.xaml" WindowStyle="None" AllowsTransparency="True" Background="black" MouseDown="NavigationWindow_MouseDown"  >
-
+        Title="MainWindow"  WindowState="Maximized" Source="MainPage.xaml" ResizeMode="CanMinimize" MouseDown="NavigationWindow_MouseDown" FontFamily="Constantia"  >
+    <Window.Background>
+        <ImageBrush ImageSource="Images/background.jpg"/>
+    </Window.Background>
 </NavigationWindow>

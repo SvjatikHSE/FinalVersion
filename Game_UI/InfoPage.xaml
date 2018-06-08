@@ -1,0 +1,16 @@
+﻿<Page x:Class="Game_UI.InfoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Game_UI"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="InfoPage">
+
+    <Grid>
+        <Rectangle Grid.Row="3" Grid.RowSpan="3" Fill="Black" OpacityMask="#FF0F0F0F" Opacity="0.5" Grid.ColumnSpan="2" Margin="200 0"></Rectangle>
+        <TextBlock Margin="200 0" Foreground="#FFF2F2F2" FontFamily="Constantia" FontSize="44" HorizontalAlignment="Center">Информация</TextBlock>
+        <TextBlock Margin="200 70" Foreground="#FFF2F2F2" FontFamily="Constantia" FontSize="30" HorizontalAlignment="Center">Здесь будет длинный текст</TextBlock>
+    </Grid>
+</Page>
