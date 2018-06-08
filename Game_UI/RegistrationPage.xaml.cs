@@ -1,5 +1,4 @@
-﻿using Game_UI;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,29 +13,26 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Game_of_brains_UI
+namespace Game_UI
 {
     /// <summary>
-    /// Логика взаимодействия для MainPage.xaml
+    /// Логика взаимодействия для RegistrationPage.xaml
     /// </summary>
-    public partial class MainPage : Page
+    public partial class RegistrationPage : Page
     {
-        public MainPage()
+        public RegistrationPage()
         {
             InitializeComponent();
         }
 
-        
         private void RegButton_Click(object sender, RoutedEventArgs e)
         {
-            var regpage = new RegistrationPage();
-            NavigationService.Navigate(regpage);
+
         }
 
-        private void StartButton_Click(object sender, RoutedEventArgs e)
+        private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
-            var packPage = new PackPage();
-            NavigationService.Navigate(packPage);
+
         }
     }
 }

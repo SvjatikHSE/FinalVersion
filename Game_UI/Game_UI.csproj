@@ -67,6 +67,9 @@
     <Compile Include="PackPage.xaml.cs">
       <DependentUpon>PackPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RegistrationPage.xaml.cs">
+      <DependentUpon>RegistrationPage.xaml</DependentUpon>
+    </Compile>
     <Page Include="InfoPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -91,6 +94,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="PackPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RegistrationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
