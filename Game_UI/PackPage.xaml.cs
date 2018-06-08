@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MLG;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +25,24 @@ namespace Game_UI
         public PackPage()
         {
             InitializeComponent();
+            var testrepo = new Repository();
+            testrepo.LoadData();
+            PackList.ItemsSource = testrepo.Packages;
+            PointsList.ItemsSource = testrepo.Packages;
+            CheckBoxList.ItemsSource = testrepo.Packages;
+            
+
+        }
+        List<CheckBox> CreateChBs(List<Package> packs)
+        {
+            var listOfChb = new List<CheckBox>();
+            foreach (var p in packs)
+            {
+                var checkbox = new CheckBox();
+                checkbox.IsChecked = p.IsAlreadyPlayed;
+                listOfChb.Add(checkbox);
+            }
+            return listOfChb;
         }
     }
 }

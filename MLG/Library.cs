@@ -29,6 +29,8 @@ namespace MLG
         public List<Question> Questions { get; set; }
         public String Name { get; set; }
         public Question CurrentQuestion { get; set; }
+        public bool IsAlreadyPlayed { get; set; }
+        public int? ResultOfUser { get; set; }
     }
 
     public class User
