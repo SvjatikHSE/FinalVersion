@@ -10,10 +10,23 @@ namespace MLG
     {
         public List<Package> Packages { get; set; }
         List<Package> packages=new List<Package>();
+        List<Question> questions = new List<Question>();
         List<User> users=new List<User>();
+
+        public Repository()
+        {
+            LoadData();
+        }
 
         public void LoadData()
         {
+            //ПРОСТИ ШАГАНЕ,НО ФОРМАТ ИЗМЕНИЛСЯ ХАХАХАХАХАХ
+
+            using (var context = new BDContext())
+            {
+                packages = context.Packages.Include("Questions").ToList();
+                questions = context.Questions.ToList();
+            }
             //users = new List<User>() { new User() { Name="t", Password="t"} };
             //Packages = new List<Package>() { new Package()
             //{ Name="testpack", IsAlreadyPlayed=false, Questions=new List<Question>()

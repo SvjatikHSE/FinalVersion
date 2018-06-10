@@ -21,12 +21,10 @@ namespace Game_UI
     /// </summary>
     public partial class MainWindow : NavigationWindow
     {
+        Repository repository;
         public MainWindow()
         {
-            using (var bdcontext = new BDContext())
-            {
-                bdcontext.Questions.ToList();
-            }
+            repository = new Repository();
                 //скачиваю файл
                 //Information information = new Information();
                 //information.DownloadInfo("https://db.chgk.info/xml/random", "TestFile.xml");
