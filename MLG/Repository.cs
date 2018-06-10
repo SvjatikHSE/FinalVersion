@@ -14,20 +14,20 @@ namespace MLG
 
         public void LoadData()
         {
-            users = new List<User>() { new User() { Name="t", Password="t"} };
-            Packages = new List<Package>() { new Package()
-            { Name="testpack", IsAlreadyPlayed=false, Questions=new List<Question>()
-            { new Question()
-            { Task="trynottodye", Points=10,
-                AllAnswers = new List<Variant>()
-                { new Variant()
-                { Answer="1" }, new Variant(){ Answer="2"} } } } }, new Package()
-            { Name="testpack2", IsAlreadyPlayed=true, ResultOfUser=20, Questions=new List<Question>()
-            { new Question()
-            { Task="trynottodye22", Points=10,
-                AllAnswers = new List<Variant>()
-                { new Variant()
-                { Answer="12" }, new Variant(){ Answer="22"} } } } } };
+            //users = new List<User>() { new User() { Name="t", Password="t"} };
+            //Packages = new List<Package>() { new Package()
+            //{ Name="testpack", IsAlreadyPlayed=false, Questions=new List<Question>()
+            //{ new Question()
+            //{ Task="trynottodye", Points=10,
+            //    AllAnswers = new List<Variant>()
+            //    { new Variant()
+            //    { Answer="1" }, new Variant(){ Answer="2"} } } } }, new Package()
+            //{ Name="testpack2", IsAlreadyPlayed=true, ResultOfUser=20, Questions=new List<Question>()
+            //{ new Question()
+            //{ Task="trynottodye22", Points=10,
+            //    AllAnswers = new List<Variant>()
+            //    { new Variant()
+            //    { Answer="12" }, new Variant(){ Answer="22"} } } } } };
         }
 
         public User FindUser(User user)

@@ -23,6 +23,15 @@ namespace Game_UI
     {
         public MainWindow()
         {
+            using (var bdcontext = new BDContext())
+            {
+                bdcontext.Questions.ToList();
+            }
+                //скачиваю файл
+                //Information information = new Information();
+                //information.DownloadInfo("https://db.chgk.info/xml/random", "TestFile.xml");
+                Package package = new Package();
+            package.LoadData("TestFile.xml");
             InitializeComponent();
         }
 

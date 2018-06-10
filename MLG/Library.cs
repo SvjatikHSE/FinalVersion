@@ -1,36 +1,60 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace MLG
 {
-    public class Question
-    {
-        public int Id { get; set; }
-        public string Task { get; set; }
-        public Variant CorrectAnswer { get; set; }
-        public List<Variant> AllAnswers { get; set; }
-        public int Points { get; set; }
-
-
-        public bool TrueAnswer(User user,Question question)
-        {
-            if (user.Answer == question.CorrectAnswer.Answer)
-                return true;
-            else
-                return false;
-        }
-    }
+    
     public class Package
     {
         public int Id { get; set; }
-        public List<Question> Questions { get; set; }
         public String Name { get; set; }
         public Question CurrentQuestion { get; set; }
         public bool IsAlreadyPlayed { get; set; }
         public int? ResultOfUser { get; set; }
+        public List<Question> Questions { get; set; }
+
+        public void LoadData(string fileName)
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(fileName);
+
+            Name = "TestPack";
+            foreach(XmlNode node in doc.DocumentElement)
+            {
+                string tourFileName = node["tourFileName"].InnerText;
+                string question = node["Question"].InnerText;
+                string comments = node["Comments"].InnerText;
+                string tourTittle = node["tourTitle"].InnerText;
+                string tournamentTittle = node["tournamentTitle"].InnerText;
+                string author = node["Authors"].InnerText;
+                string answer = node["Answer"].InnerText;
+                 Question questionSmth= new Question()
+                {
+                    TourFileName = tourFileName,
+                    FieldQuestion = question,
+                    Comments = comments,
+                    TourTittle = tourTittle,
+                    TournamentTittle = tournamentTittle,
+                    Author = author,
+                    Answer=answer
+                };
+                if(Questions==null)
+                {
+                    Questions = new List<Question>();
+                    Questions.Add(questionSmth);
+                }
+                else
+                {
+                    Questions.Add(questionSmth);
+                }
+            }
+
+        }
     }
 
     public class User
@@ -43,55 +67,33 @@ namespace MLG
         public int TotalRating { get; set; }
     }
 
-    public class Variant
-    {
-        public int Id { get; set; }
-        public string Answer { get; set; }
-    }
-
     public class Session
     {
         public User User { get; set; }
         public Package Package { get; set; }
-        public bool Aegis { get; set; }
-        public bool FiftyFifty { get; set; }
-        public bool FriendlyCall { get; set; }
+        public int Score { get; set; }
 
-        public bool AegisAction()
+    }
+
+    public class Information
+    {
+        public void DownloadInfo(string remoteUri,string fileName)
         {
-            if(this.Aegis==true)
-            {
-                CorrectAnswerAction();
-                Aegis = false;
-                return true;
-            }
-            return false;
+            WebClient webClient = new WebClient();
+            webClient.DownloadFile(remoteUri, fileName);
         }
+    }
 
-        public bool FiftyFiftyAction()
-        {
-            if(this.FiftyFifty==true)
-            {
-                Random random1 = new Random();
-                int value1 = random1.Next(0, 4);
-                int value2;
-                do
-                    value2 = random1.Next(0, 4);
-                while (value1==value2);
-                Package.CurrentQuestion.AllAnswers.RemoveAt(value1);
-                Package.CurrentQuestion.AllAnswers.RemoveAt(value2);
-                return true;
-            }
-            return false;
-        }
-
-        public void CorrectAnswerAction()
-        {
-            User.SessionRating += this.Package.CurrentQuestion.Points;
-            User.TotalRating += this.Package.CurrentQuestion.Points;
-            int currentQuestionNumber = this.Package.Questions.FindIndex(x=>x==Package.CurrentQuestion);
-            this.Package.CurrentQuestion = this.Package.Questions[currentQuestionNumber + 1];
-        }
-
+    public class Question
+    {
+        public int Id { get; set; }
+        public int Points { get; set; }
+        public string TourFileName { get; set; }
+        public string FieldQuestion { get; set; }
+        public string Answer { get; set; }
+        public string Author { get; set; }
+        public string Comments { get; set; }
+        public string TourTittle { get; set; }
+        public string TournamentTittle { get; set; }
     }
 }

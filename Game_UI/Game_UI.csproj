@@ -141,5 +141,10 @@
   <ItemGroup>
     <Resource Include="Images\owl_PNG49.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TestFile.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
