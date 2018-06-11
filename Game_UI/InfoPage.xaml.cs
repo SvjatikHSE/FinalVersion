@@ -24,5 +24,7 @@ namespace Game_UI
         {
             InitializeComponent();
         }
+
+     
     }
 }

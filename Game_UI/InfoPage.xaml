@@ -10,7 +10,9 @@
 
     <Grid>
         <Rectangle Grid.Row="3" Grid.RowSpan="3" Fill="Black" OpacityMask="#FF0F0F0F" Opacity="0.5" Grid.ColumnSpan="2" Margin="200 0"></Rectangle>
-        <TextBlock Margin="200 0" Foreground="#FFF2F2F2" FontFamily="Constantia" FontSize="44" HorizontalAlignment="Center">Информация</TextBlock>
-        <TextBlock Margin="200 70" Foreground="#FFF2F2F2" FontFamily="Constantia" FontSize="30" HorizontalAlignment="Center">Здесь будет длинный текст</TextBlock>
+        <TextBlock HorizontalAlignment="Left" FontSize="38" FontFamily="Constantia" Foreground="#F2F2F2" Margin="50 20 0 0"><Hyperlink NavigateUri="MainPage.xaml" FontFamily="Constantia" TextDecorations="None" Foreground="#F2F2F2"> Назад</Hyperlink></TextBlock>
+        <TextBlock Margin="200 0" Foreground="#FFF2F2F2" FontFamily="Constantia" FontSize="100" HorizontalAlignment="Center">Информация</TextBlock>
+        <TextBlock Margin="200 170" Foreground="#FFF2F2F2" FontFamily="Constantia" FontSize="30" HorizontalAlignment="Center">Здесь будет длинный текст</TextBlock>
+       
     </Grid>
 </Page>

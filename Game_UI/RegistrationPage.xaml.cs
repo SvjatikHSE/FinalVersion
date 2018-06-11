@@ -52,7 +52,7 @@ namespace Game_UI
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Uri("MainPage.xaml", UriKind.Relative));
         }
     }
 }
