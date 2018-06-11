@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:Game_UI"
         mc:Ignorable="d"
         Title="Game of Brains"  WindowState="Maximized" Source="MainPage.xaml" ResizeMode="CanMinimize" MouseDown="NavigationWindow_MouseDown" FontFamily="Constantia"  >
+    
     <Window.Background>
-        <ImageBrush ImageSource="Images/background.jpg"/>
+        
+        <ImageBrush ImageSource="Images/background1.jpg"/>
     </Window.Background>
+    
 </NavigationWindow>
