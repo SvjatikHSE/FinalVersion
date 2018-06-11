@@ -21,12 +21,14 @@ namespace Game_UI
     /// </summary>
     public partial class PackPage : Page
     {
-        //здесь нужны пакеты из бд 
-        public PackPage()
+        private User _user;
+        public PackPage(User user)
         {
             InitializeComponent();
-            var testrepo = new Repository();
+            _user = user;
+            var testrepo = new DBRepository();
             testrepo.LoadData();
+            UILogic.AdaptPacksForUser(user, testrepo.Packages);
             PackList.ItemsSource = testrepo.Packages;
             PointsList.ItemsSource = testrepo.Packages;
             CheckBoxList.ItemsSource = testrepo.Packages;

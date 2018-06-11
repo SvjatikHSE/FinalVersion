@@ -65,13 +65,16 @@ namespace MLG
         public string Answer { get; set; }
         public int SessionRating { get; set; }
         public int TotalRating { get; set; }
+        public List<Session> Sessions { get; set; }
     }
 
     public class Session
     {
+        public int Id { get; set; }
         public User User { get; set; }
         public Package Package { get; set; }
         public int Score { get; set; }
+        public string PackName { get; set; }
 
     }
 
@@ -95,5 +98,27 @@ namespace MLG
         public string Comments { get; set; }
         public string TourTittle { get; set; }
         public string TournamentTittle { get; set; }
+    }
+    public static class UILogic
+    {
+        public static void CreateSession(User user, Package pack)
+        {
+            if (user.Sessions.Count == 0)
+            {
+                user.Sessions = new List<Session>();
+            }
+            var newSession = new Session() { User = user, Package = pack, PackName = pack.Name };
+        }
+        public static void AdaptPacksForUser(User user, List<Package> packs)
+        {
+            if (user.Sessions != null)
+            {
+                foreach (var pack in packs)
+                {
+                    if (user.Sessions.Any(x => x.PackName == pack.Name))
+                        pack.IsAlreadyPlayed = true;
+                }
+            }
+        }
     }
 }

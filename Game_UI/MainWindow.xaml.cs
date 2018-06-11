@@ -21,15 +21,15 @@ namespace Game_UI
     /// </summary>
     public partial class MainWindow : NavigationWindow
     {
-        Repository repository;
+        DBRepository repository;
         public MainWindow()
         {
-            repository = new Repository();
+            repository = new DBRepository();
                 //скачиваю файл
                 //Information information = new Information();
                 //information.DownloadInfo("https://db.chgk.info/xml/random", "TestFile.xml");
                 Package package = new Package();
-            package.LoadData("TestFile.xml");
+            package.LoadData("C:/Users/mir.shn/Source/Repos/FinalVersion/Game_UI/TestFile.xml");
             InitializeComponent();
         }
 
