@@ -65,13 +65,16 @@ namespace MLG
         public string Answer { get; set; }
         public int SessionRating { get; set; }
         public int TotalRating { get; set; }
+        public List<Session> Sessions { get; set; }
     }
 
     public class Session
     {
+        public int Id { get; set; }
         public User User { get; set; }
         public Package Package { get; set; }
         public int Score { get; set; }
+        public string PackName { get; set; }
 
     }
 
@@ -96,5 +99,46 @@ namespace MLG
         public string TourTittle { get; set; }
         public string TournamentTittle { get; set; }
         
+    }
+    public static class UILogic
+    {
+        public static Session CreateSession(User user, Package pack)
+        {
+            if (user.Sessions.Count == 0)
+            {
+                user.Sessions = new List<Session>();
+            }
+            if(user.Sessions.FirstOrDefault(x=>x.PackName==pack.Name)!=null)
+            {
+                var session = user.Sessions.FirstOrDefault(x => x.PackName == pack.Name);
+                user.Sessions.Remove(session);
+                using (var context = new BDContext())
+                {
+                   context.Sessions.Remove(context.Sessions.Where(x => x.User.Name == user.Name).FirstOrDefault(x => x.PackName == pack.Name));
+                   context.SaveChanges();
+                }
+            }
+            var newSession = new Session() { User = user, Package = pack, PackName = pack.Name };
+            using (var context = new BDContext())
+            {
+                newSession.Package = context.Packages.FirstOrDefault(x => x.Name == pack.Name);
+                newSession.User = context.Users.FirstOrDefault(x => x.Name == user.Name);
+                context.Sessions.Add(newSession);
+                context.SaveChanges();
+            }
+                user.Sessions.Add(newSession);
+            return newSession;
+        }
+        public static void AdaptPacksForUser(User user, List<Package> packs)
+        {
+            if (user.Sessions != null)
+            {
+                foreach (var pack in packs)
+                {
+                    if (user.Sessions.Any(x => x.PackName == pack.Name))
+                        pack.IsAlreadyPlayed = true;
+                }
+            }
+        }
     }
 }

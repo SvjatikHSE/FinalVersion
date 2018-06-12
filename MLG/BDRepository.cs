@@ -6,18 +6,17 @@ using System.Threading.Tasks;
 
 namespace MLG
 {
-    public class Repository
+    public class DBRepository
     {
         public List<Package> Packages { get; set; }
-        public List<Package> packages=new List<Package>();
+        public List<Question> Questions { get; set; }
+        List<Package> packages=new List<Package>();
         List<Question> questions = new List<Question>();
         List<User> users=new List<User>();
 
-        public Repository()
+        public DBRepository()
         {
             LoadData();
-       
-
         }
 
         public void LoadData()
@@ -26,8 +25,8 @@ namespace MLG
 
             using (var context = new BDContext())
             {
-                packages = context.Packages.Include("Questions").ToList();
-                questions = context.Questions.ToList();
+                Packages = context.Packages.Include("Questions").ToList();
+                Questions = context.Questions.ToList();
             }
             //users = new List<User>() { new User() { Name="t", Password="t"} };
             //Packages = new List<Package>() { new Package()
@@ -45,32 +44,23 @@ namespace MLG
             //    { Answer="12" }, new Variant(){ Answer="22"} } } } } };
         }
 
-        public User FindUser(User user)
+        public bool FindUser(string name, string password, out User user)
         {
-            if(users.Find(x=>x.Name==user.Name).Password==user.Password)
+            using (var c = new BDContext())
             {
-                return user;
+                user = c.Users.Include("Sessions").FirstOrDefault(x => x.Name == name && x.Password == password);
+                return user != null;
             }
-            user = null;
-            return user;
         }
 
-        public User Registration(string login,string password)
+        public void  AddUser(User user)
         {
-            User user = new User();
-            if ((login!=null)&&(password!=null))
-            {
-                user.Name = login;
-                user.Password = password;
-                this.users.Add(user);
             using (var context = new BDContext())
                 {
                     context.Users.Add(user);
                     context.SaveChanges();
                 }
-                return user;
-            }
-                return null;
+            users.Add(user);
         }
     }
 }

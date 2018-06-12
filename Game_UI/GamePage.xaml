@@ -1,0 +1,33 @@
+﻿<Page x:Class="Game_UI.GamePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Game_UI"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="GamePage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition />
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="38" Height="45" FontFamily="Constantia" Foreground="#F2F2F2"  ><Hyperlink NavigateUri="PackPage.xaml" FontFamily="Constantia" TextDecorations="None" Foreground="#F2F2F2"> Выйти</Hyperlink></TextBlock>
+        <Rectangle Grid.Row="1" Grid.RowSpan="2" Fill="Black" OpacityMask="#FF0F0F0F" Opacity="0.5" Grid.ColumnSpan="2" Grid.Column="1" ></Rectangle >
+        <TextBlock Name ="QuestionBlock" Foreground="White"  Grid.Row="1" Grid.RowSpan="2" Margin="7" TextWrapping="Wrap" Grid.ColumnSpan="2" Grid.Column="1" FontFamily="Constantia" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Name="TimerStartButton" Margin="5" Content="Запустить &#xD;&#xA;   таймер" Grid.Row="3" Grid.Column="1" Background="#333333" Foreground="#BDBDBD" FontSize="30" FontFamily="Constantia" Click="TimerStartButton_Click"/>
+        <Button Name="ShowAnswerButton" Margin="5" Content="Показать &#xD;&#xA;    ответ" Grid.Row="3" Grid.Column="2" Background="#333333" Foreground="#BDBDBD" FontSize="30" FontFamily="Constantia" IsEnabled="False" Click="ShowAnswerButton_Click"/>
+        <Button Name="RightAnsButton" Opacity="0.6" Background="Green" Grid.RowSpan="2" Grid.Row="1" Margin="5" Grid.Column="3" Visibility="Hidden" Click="RightAnsButton_Click"/>
+        <Button Name="WrongAnsButton" Opacity="0.6" Background="Red" Grid.RowSpan="2" Grid.Row="1" Margin="5" Visibility="Hidden" Click="WrongAnsButton_Click"/>
+        <TextBlock Name="TimerBlock" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontFamily="Constantia" Grid.Column="3" />
+    </Grid>
+</Page>
