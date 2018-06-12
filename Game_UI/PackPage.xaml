@@ -33,7 +33,7 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox >
-        <ListBox Name="PointsList" Foreground="White" Grid.Row="2" Grid.Column="2"  HorizontalContentAlignment="Center" FontSize="40" FontFamily="Constantia"  Grid.RowSpan="2" Margin="0 0 10 10" DisplayMemberPath="ResultOfUser"  OpacityMask="#FF0F0F0F" Opacity="0.7" Background="Black"/>
+        <ListBox Name="PointsList" Foreground="White" Grid.Row="2" Grid.Column="2"  HorizontalContentAlignment="Center" FontSize="40" FontFamily="Constantia"  Grid.RowSpan="2" Margin="0 0 10 10"  OpacityMask="#FF0F0F0F" Opacity="0.7" Background="Black" />
         <Rectangle Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3"  Fill="Black" OpacityMask="#FF0F0F0F" Opacity="0.6"  Margin="10 0 10 10" IsHitTestVisible="False" ></Rectangle>
 
     </Grid>

@@ -9,6 +9,10 @@
       Title="ResultPage">
 
     <Grid>
-        <Label Content="тут будет результат" Foreground="White" FontSize="50"/>
+        <Label Content="Результат" HorizontalAlignment="Center" Foreground="White" FontSize="50"/>
+        <Label Name="PleaseWork" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60" FontFamily="Constantia"/>
+        <TextBlock TextWrapping="Wrap" Name="Result" Text=""  Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60" FontFamily="Constantia"/>
+        <Rectangle Fill="Black" OpacityMask="#FF0F0F0F" Opacity="0.5" Grid.ColumnSpan="2" Margin="200 0"></Rectangle>
+        <Button Name="PackButton" Content="Выбрать пакет" VerticalAlignment="Bottom" Margin="40" Height="50" Width="300"  Background="#333333" Foreground="#BDBDBD" FontSize="40" FontFamily="Constantia" Click="PackButton_Click" />
     </Grid>
 </Page>

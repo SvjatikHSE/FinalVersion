@@ -17,7 +17,7 @@
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" Orientation="Horizontal"  Background="Black" OpacityMask="#FF0F0F0F" Opacity="0.8" >
             <StackPanel HorizontalAlignment="Left" >
                 <TextBlock Height="50" Margin="0 10 10 100" TextAlignment="Right"  Width="400" FontSize="38" Foreground="White" Text="Название команды:"/>
-                <TextBlock Height="50" Margin="0 10 10 100" TextAlignment="Right" Width="400" FontSize="38" Foreground="White" Text="Пароль"/>
+                <TextBlock Height="50" Margin="0 10 10 100" TextAlignment="Right" Width="400" FontSize="38" Foreground="White" Text="Пароль:"/>
                 <TextBlock Height="50" Margin="0 10 10 100" TextAlignment="Right" Width="400" FontSize="38" Foreground="White" Text="Повторите пароль:"/>
             </StackPanel>
             <StackPanel HorizontalAlignment="Right">

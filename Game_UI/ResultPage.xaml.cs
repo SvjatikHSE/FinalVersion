@@ -21,9 +21,21 @@ namespace Game_UI
     /// </summary>
     public partial class ResultPage : Page
     {
+        Session _session;
         public ResultPage(Session session)
         {
+            _session = session;
+            PleaseWork.Content= "Вы правильно ответили на " + session.Score + " вопросов из 24";
+            // Result.Text = "Вы правильно ответили на "+ session.Score +" вопросов из 24";
+            UILogic.CreateSession(session.User, session.Package, session.Score);
             InitializeComponent();
+        }
+
+        private void PackButton_Click(object sender, RoutedEventArgs e)
+        {
+            var packpage = new PackPage(_session.User);
+            NavigationService.Navigate(packpage);
+
         }
     }
 }
