@@ -16,9 +16,9 @@ namespace MLG.Migrations
         protected override void Seed(MLG.BDContext context)
         {
             Package package = new Package();
-            package.LoadData("C:/Users/mir.shn/source/repos/FinalVersion/Game_UI/TestFile.xml");
+            package.LoadData("C:/Users/User/source/repos/MLG/Game_UI/TestFile.xml");
             Package package2 = new Package();
-            package2.LoadData("C:/Users/mir.shn/source/repos/FinalVersion/Game_UI/TestFile2.xml");
+            package2.LoadData("C:/Users/User/source/repos/MLG/Game_UI/TestFile2.xml");
             using (var dbContext = new BDContext())
             {
                 dbContext.Packages.AddOrUpdate(x => x.Name, package);
