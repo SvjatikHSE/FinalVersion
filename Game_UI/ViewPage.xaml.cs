@@ -40,7 +40,10 @@ namespace Game_UI
 
         private void AnswButton_Click(object sender, RoutedEventArgs e)
         {
-            QuestTextBlock.Text = Quest.Answer;
+            QuestTextBlock.FontSize = 32;
+            if (Quest.Comments == "")
+                Quest.Comments = "-";
+            QuestTextBlock.Text = $" Ответ: {Quest.Answer} \r\n Комментарий: {Quest.Comments}";
         }
     }
 }

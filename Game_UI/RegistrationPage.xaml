@@ -30,8 +30,8 @@
          <TextBlock Name="MessageBlock" Foreground="Salmon"  FontSize="40" HorizontalAlignment="Center" Margin="390,437,428,43" Grid.Row="1" Grid.RowSpan="2"/>
         <StackPanel Grid.Row="2" HorizontalAlignment="Center" Orientation="Horizontal"  Background="Black" OpacityMask="#FF0F0F0F" Opacity="0.8">
            
-            <Button Name="RegButton" Content="Начать" Grid.Row="5" Height="50" Width="300"  Background="#333333" Foreground="#BDBDBD" FontSize="40" FontFamily="Constantia" Click="RegButton_Click"/>
-            <Button Name="CancelButton" Content="Отмена" Grid.Row="5" Height="50" Width="250"  Background="#333333" Foreground="#BDBDBD" FontSize="40" FontFamily="Constantia" Click="CancelButton_Click"/>
+            <Button Name="RegButton" Content="Начать" Grid.Row="5" Height="50" Width="300" Margin="50 0" Background="#333333" Foreground="#BDBDBD" FontSize="40" FontFamily="Constantia" Click="RegButton_Click"/>
+            <Button Name="CancelButton" Content="Отмена" Grid.Row="5" Height="50" Width="300" Margin="60 0"  Background="#333333" Foreground="#BDBDBD" FontSize="40" FontFamily="Constantia" Click="CancelButton_Click"/>
         </StackPanel>
     </Grid>
 </Page>

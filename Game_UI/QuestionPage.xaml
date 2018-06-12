@@ -15,10 +15,10 @@
             <RowDefinition Height="37*"/>
             <RowDefinition Height="263*"/>
         </Grid.RowDefinitions>
-        <TextBlock HorizontalAlignment="Left" FontSize="38" FontFamily="Constantia" Foreground="#F2F2F2" Margin="30 20 0 0"><Hyperlink NavigateUri="PackPage.xaml" FontFamily="Constantia" TextDecorations="None" Foreground="#F2F2F2"> Назад</Hyperlink></TextBlock>
+        <Button Height="50" HorizontalAlignment="Left" FontSize="38" FontFamily="Constantia" Foreground="#F2F2F2" Margin="30 20 0 0"    Click="BackButton_Click" Background="#FF7C7575" OpacityMask="#FFF3E7E7" Opacity="0.8">Назад</Button>
         <TextBlock  Foreground="#f2f2f2"  FontSize="100" FontFamily="Constantia" Text="Выберите вопрос" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="58,4"/>
         <Label Foreground="White" Grid.Row="1" FontSize="50" FontFamily="Constantia" Name="PackNameLabel" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="148,0" Background="{x:Null}"/>
-        <ListBox Name="QuestList" Grid.Row="2" HorizontalContentAlignment="Center" FontSize="40" FontFamily="Constantia" OpacityMask="#FF0F0F0F"  Grid.RowSpan="2" FontWeight="Bold" Opacity="0.7" Background="Black" Foreground="White" Margin="10 0 0 10" SelectionChanged="QuestList_SelectionChanged"/>
+        <ListBox Name="QuestList" Grid.Row="2" HorizontalContentAlignment="Center" FontSize="40" FontFamily="Constantia" OpacityMask="#FF0F0F0F"  Grid.RowSpan="2" FontWeight="Bold" Opacity="0.7" Background="Black" Foreground="White" Margin="20" MouseDoubleClick="QuestList_MouseDoubleClick"/>
         <Rectangle Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3"  Fill="Black" OpacityMask="#FF0F0F0F" Opacity="0.6"  Margin="10 0 10 10" IsHitTestVisible="False" ></Rectangle>
     </Grid>
 </Page>

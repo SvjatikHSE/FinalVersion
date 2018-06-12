@@ -11,12 +11,12 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="90*"/>
-            <RowDefinition Height="280*"/>
-            <RowDefinition Height="80*"/>
+            <RowDefinition Height="320*"/>
+            <RowDefinition Height="60*"/>
         </Grid.RowDefinitions>
-        <Button HorizontalAlignment="Left" FontSize="38" FontFamily="Constantia" Foreground="#F2F2F2" Margin="30 20 0 0" Background="{x:Null}" BorderBrush="{x:Null}" Click="BackButton_Click">Назад</Button>
+        <Button Height="50" HorizontalAlignment="Left" FontSize="38" FontFamily="Constantia" Foreground="#F2F2F2" Margin="30 20 0 0" Background="#FF7C7575" OpacityMask="#FFF3E7E7" Opacity="0.8" Click="BackButton_Click">Назад</Button>
         <TextBlock  Foreground="#f2f2f2"  FontSize="100" FontFamily="Constantia" Text="Вопрос" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="58,4"/>
-        <TextBlock Name="QuestTextBlock" Grid.Row="1" FontSize="40" FontFamily="Constantia" Foreground="#fff" Margin="50"></TextBlock>
+        <TextBlock Name="QuestTextBlock" Grid.Row="1"  FontSize="35" FontFamily="Constantia" Foreground="#fff" Margin="20 5"></TextBlock>
         <Rectangle Grid.Row="1" Fill="Black" OpacityMask="#FF0F0F0F" Opacity="0.6"  Margin="10 0 10 10" IsHitTestVisible="False" ></Rectangle>
         <Button Name="AnswButton" Content="Ответ" Grid.Row="5" Height="50" Width="300" Margin="10 0 100 0 " Background="#333333" Foreground="#BDBDBD" FontSize="40" FontFamily="Constantia" Click="AnswButton_Click" />
     </Grid>

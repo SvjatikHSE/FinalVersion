@@ -21,18 +21,27 @@ namespace Game_UI
     /// </summary>
     public partial class QuestionPage : Page
     {
-        public QuestionPage(Package pack)
+        PackPage Ppage;
+        public QuestionPage(Package pack,PackPage packpage)
         {
             InitializeComponent();
             PackNameLabel.Content = pack.Name;
             QuestList.ItemsSource = pack.Questions;
  
             QuestList.DisplayMemberPath = "Id";
+            Ppage = packpage;
         }
 
-        private void QuestList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new ViewPage(QuestList.SelectedItem as Question,this));
+            NavigationService.Navigate(Ppage);
+        }
+
+        private void QuestList_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new ViewPage(QuestList.SelectedItem as Question, this));
         }
     }
 }

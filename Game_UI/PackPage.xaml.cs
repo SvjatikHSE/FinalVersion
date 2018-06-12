@@ -62,6 +62,14 @@ namespace Game_UI
             var currSession = UILogic.CreateSession(_user, package);
             UILogic.AdaptPacksForUser(_user, dBRepository.Packages);
             UpdateInfo(dBRepository.Packages);
+            PopUpWindow popup = new PopUpWindow();
+            popup.ShowDialog();
+            if (popup.result == "q")
+            {
+                var navlink = new QuestionPage(PackList.SelectedItem as Package,this);
+                NavigationService.Navigate(navlink);
+            }
+            if (popup.result == "p") { };
         }
 
        
