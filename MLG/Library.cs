@@ -18,13 +18,15 @@ namespace MLG
         public int? ResultOfUser { get; set; }
         public List<Question> Questions { get; set; }
 
-        public void LoadData(string fileName)
+        public void LoadData(string fileName, int i)
         {
+           
             XmlDocument doc = new XmlDocument();
             doc.Load(fileName);
 
             foreach(XmlNode node in doc.DocumentElement)
             {
+                
                 string tourFileName = node["tourFileName"].InnerText;
                 string question = node["Question"].InnerText;
                 string comments = node["Comments"].InnerText;
@@ -52,7 +54,9 @@ namespace MLG
                     Questions.Add(questionSmth);
                 }
             }
-            Name = Questions[1].FieldQuestion;
+           
+            Name = string.Format($"Пакет {i}");
+           
         }
     }
 
@@ -103,7 +107,7 @@ namespace MLG
     {
         public static Session CreateSession(User user, Package pack)
         {
-            if (user.Sessions.Count == 0)
+            if (user.Sessions == null)
             {
                 user.Sessions = new List<Session>();
             }

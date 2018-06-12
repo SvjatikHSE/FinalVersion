@@ -21,7 +21,7 @@
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="38" Height="45" FontFamily="Constantia" Foreground="#F2F2F2"  ><Hyperlink NavigateUri="PackPage.xaml" FontFamily="Constantia" TextDecorations="None" Foreground="#F2F2F2"> Выйти</Hyperlink></TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="38" Height="45" FontFamily="Constantia" Foreground="#F2F2F2"  ><Hyperlink NavigateUri="MainPage.xaml" FontFamily="Constantia" TextDecorations="None" Foreground="#F2F2F2"> Выйти</Hyperlink></TextBlock>
         <Rectangle Grid.Row="1" Grid.RowSpan="2" Fill="Black" OpacityMask="#FF0F0F0F" Opacity="0.5" Grid.ColumnSpan="2" Grid.Column="1" ></Rectangle >
         <TextBlock Name ="QuestionBlock" Foreground="White"  Grid.Row="1" Grid.RowSpan="2" Margin="7" TextWrapping="Wrap" Grid.ColumnSpan="2" Grid.Column="1" FontFamily="Constantia" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Button Name="TimerStartButton" Margin="5" Content="Запустить &#xD;&#xA;   таймер" Grid.Row="3" Grid.Column="1" Background="#333333" Foreground="#BDBDBD" FontSize="30" FontFamily="Constantia" Click="TimerStartButton_Click"/>

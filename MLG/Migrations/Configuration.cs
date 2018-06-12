@@ -15,12 +15,13 @@ namespace MLG.Migrations
 
         protected override void Seed(MLG.BDContext context)
         {
+           
             Package package = new Package();
-            package.LoadData("C:/Users/User/source/repos/MLG/Game_UI/TestFile.xml");
+            package.LoadData("C:/Users/mir.shn/source/repos/FinalVersionn/Game_UI/TestFile.xml", 1);
             Package package2 = new Package();
-            package2.LoadData("C:/Users/User/source/repos/MLG/Game_UI/TestFile2.xml");
+            package2.LoadData("C:/Users/mir.shn/source/repos/FinalVersionn/Game_UI/TestFile2.xml", 2);
             Package package3 = new Package();
-            package3.LoadData("C:/Users/User/source/repos/MLG/Game_UI/TestFile3.xml");
+            package3.LoadData("C:/Users/mir.shn/source/repos/FinalVersionn/Game_UI/TestFile3.xml", 3);
             using (var dbContext = new BDContext())
             {
                 dbContext.Packages.AddOrUpdate(x=>x.Name,package);

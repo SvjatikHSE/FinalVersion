@@ -18,6 +18,6 @@
         <TextBlock  Foreground="#f2f2f2"  FontSize="100" FontFamily="Constantia" Text="Вопрос" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="58,4"/>
         <TextBlock Name="QuestTextBlock" Grid.Row="1" FontSize="40" FontFamily="Constantia" Foreground="#fff" Margin="50"></TextBlock>
         <Rectangle Grid.Row="1" Fill="Black" OpacityMask="#FF0F0F0F" Opacity="0.6"  Margin="10 0 10 10" IsHitTestVisible="False" ></Rectangle>
-        <Button Name="AnswButton" Content="Ответ" Grid.Row="5" Height="50" Width="300" Margin="10 0 100 0 " Background="#333333" Foreground="#BDBDBD" FontSize="40" FontFamily="Constantia" Click="AnswButton_Click" />
+        <Button Name="AnswButton" Content="Ответ" Grid.Row="5" Height="50" Width="300" VerticalAlignment="Center" HorizontalAlignment="Center"  Background="#333333" Foreground="#BDBDBD" FontSize="40" FontFamily="Constantia" Click="AnswButton_Click" />
     </Grid>
 </Page>

@@ -20,7 +20,7 @@ namespace Game_UI
     /// </summary>
     public partial class PopUpWindow : Window
     {
-        public string result;
+        public bool gamemode;
         public PopUpWindow()
         {
             InitializeComponent();
@@ -29,8 +29,13 @@ namespace Game_UI
 
         private void ViewButton_Click(object sender, RoutedEventArgs e)
         {
+            gamemode = false ;
+            this.Close();
+        }
 
-            result = "q" ;
+        private void GameButton_Click(object sender, RoutedEventArgs e)
+        {
+            gamemode = true;
             this.Close();
         }
     }

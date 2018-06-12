@@ -29,7 +29,7 @@ namespace Game_UI
                 Information information = new Information();
                 information.DownloadInfo("https://db.chgk.info/xml/random", "TestFile3.xml");
                 Package package = new Package();
-            package.LoadData("C:/Users/Анастасия/source/repos/FinalVersion2/Game_UI/TestFile.xml");
+            package.LoadData("C:/Users/mir.shn/source/repos/FinalVersionn/Game_UI/TestFile.xml", 1);
             InitializeComponent();
         }
 
