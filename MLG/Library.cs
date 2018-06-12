@@ -98,6 +98,7 @@ namespace MLG
         public string Comments { get; set; }
         public string TourTittle { get; set; }
         public string TournamentTittle { get; set; }
+        
     }
     public static class UILogic
     {

@@ -1,0 +1,23 @@
+﻿<Page x:Class="Game_UI.ViewPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Game_UI"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ViewPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="280*"/>
+            <RowDefinition Height="80*"/>
+        </Grid.RowDefinitions>
+        <Button HorizontalAlignment="Left" FontSize="38" FontFamily="Constantia" Foreground="#F2F2F2" Margin="30 20 0 0" Background="{x:Null}" BorderBrush="{x:Null}" Click="BackButton_Click">Назад</Button>
+        <TextBlock  Foreground="#f2f2f2"  FontSize="100" FontFamily="Constantia" Text="Вопрос" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="58,4"/>
+        <TextBlock Name="QuestTextBlock" Grid.Row="1" FontSize="40" FontFamily="Constantia" Foreground="#fff" Margin="50"></TextBlock>
+        <Rectangle Grid.Row="1" Fill="Black" OpacityMask="#FF0F0F0F" Opacity="0.6"  Margin="10 0 10 10" IsHitTestVisible="False" ></Rectangle>
+        <Button Name="AnswButton" Content="Ответ" Grid.Row="5" Height="50" Width="300" Margin="10 0 100 0 " Background="#333333" Foreground="#BDBDBD" FontSize="40" FontFamily="Constantia" Click="AnswButton_Click" />
+    </Grid>
+</Page>

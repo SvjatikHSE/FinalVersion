@@ -1,0 +1,15 @@
+﻿<Window x:Class="Game_UI.PopUpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Game_UI"
+        mc:Ignorable="d"
+        Title="Выберите опцию"  Height="250" Width="700" ResizeMode="NoResize" Background="Black" BorderBrush="Black" WindowStartupLocation="CenterScreen" >
+    <Grid>
+        <StackPanel Orientation="Horizontal" Background="#000" HorizontalAlignment="Center">
+            <Button Name="ViewButton" Height="70" Width="300" Margin="20 0"  Background="#333333" Foreground="#BDBDBD" FontSize="28" FontFamily="Constantia" Click="ViewButton_Click">Свободный просмотр</Button>
+            <Button Height="70" Width="300" Margin="20 0"  Background="#333333" Foreground="#BDBDBD" FontSize="28" FontFamily="Constantia">Игровой режим</Button>
+        </StackPanel>
+    </Grid>
+</Window>
