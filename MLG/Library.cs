@@ -52,7 +52,7 @@ namespace MLG
                     Questions.Add(questionSmth);
                 }
             }
-            Name = Questions[1].FieldQuestion;
+            Name = Questions[1].TournamentTittle;
         }
     }
 
