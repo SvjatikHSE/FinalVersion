@@ -101,7 +101,7 @@ namespace MLG
     }
     public static class UILogic
     {
-        public static void CreateSession(User user, Package pack)
+        public static Session CreateSession(User user, Package pack)
         {
             if (user.Sessions.Count == 0)
             {
@@ -126,6 +126,7 @@ namespace MLG
                 context.SaveChanges();
             }
                 user.Sessions.Add(newSession);
+            return newSession;
         }
         public static void AdaptPacksForUser(User user, List<Package> packs)
         {

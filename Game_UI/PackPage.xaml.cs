@@ -59,9 +59,13 @@ namespace Game_UI
         {
             var package = PackList.SelectedItem as Package;
             package.IsAlreadyPlayed = true;
-            UILogic.CreateSession(_user, package);
+             var currSession = UILogic.CreateSession(_user, package);
             UILogic.AdaptPacksForUser(_user, dBRepository.Packages);
             UpdateInfo(dBRepository.Packages);
+            var gamePage = new GamePage(package, 1, currSession);
+            NavigationService.Navigate(gamePage);
         }
+
+       
     }
 }
