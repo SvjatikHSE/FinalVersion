@@ -107,6 +107,16 @@ namespace MLG
             {
                 user.Sessions = new List<Session>();
             }
+            if(user.Sessions.FirstOrDefault(x=>x.PackName==pack.Name)!=null)
+            {
+                var session = user.Sessions.FirstOrDefault(x => x.PackName == pack.Name);
+                user.Sessions.Remove(session);
+                using (var context = new BDContext())
+                {
+                   context.Sessions.Remove(context.Sessions.Where(x => x.User.Name == user.Name).FirstOrDefault(x => x.PackName == pack.Name));
+                   context.SaveChanges();
+                }
+            }
             var newSession = new Session() { User = user, Package = pack, PackName = pack.Name };
             using (var context = new BDContext())
             {
