@@ -25,11 +25,11 @@ namespace Game_UI
         public MainWindow()
         {
             repository = new DBRepository();
-                //скачиваю файл
-                //Information information = new Information();
-                //information.DownloadInfo("https://db.chgk.info/xml/random", "TestFile.xml");
+                //скачиваю файл номер два
+                Information information = new Information();
+                information.DownloadInfo("https://db.chgk.info/xml/random", "TestFile2.xml");
                 Package package = new Package();
-            package.LoadData("C:/Users/mir.shn/Source/Repos/FinalVersion/Game_UI/TestFile.xml");
+            package.LoadData("C:/Users/User/source/repos/MLG/Game_UI/TestFile.xml");
             InitializeComponent();
         }
 
