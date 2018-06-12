@@ -32,9 +32,8 @@ namespace Game_UI
             testrepo.LoadData();
             UILogic.AdaptPacksForUser(user, testrepo.Packages);
             PackList.ItemsSource = testrepo.Packages;
-            PointsList.ItemsSource = testrepo.Packages;
-            CheckBoxList.ItemsSource = testrepo.Packages;
-            
+            PointsList.ItemsSource = UILogic.GetScores(user, testrepo.Packages);
+            CheckBoxList.ItemsSource = testrepo.Packages; ;
 
         }
         private void UpdateInfo(List<Package> packages)
@@ -59,14 +58,14 @@ namespace Game_UI
         {
             var package = PackList.SelectedItem as Package;
             package.IsAlreadyPlayed = true;
-            var currSession = UILogic.CreateSession(_user, package);
+            var currSession = UILogic.CreateSession(_user, package, 0);
             UILogic.AdaptPacksForUser(_user, dBRepository.Packages);
             UpdateInfo(dBRepository.Packages);
             var pop = new PopUpWindow();
             pop.ShowDialog();
             if (pop.gamemode)
             {
-                var gamepage = new GamePage(package, 1, currSession);
+                var gamepage = new GamePage(package, 23, currSession);
                 NavigationService.Navigate(gamepage);
             }
             else

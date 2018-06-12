@@ -101,9 +101,9 @@ namespace MLG
     }
     public static class UILogic
     {
-        public static Session CreateSession(User user, Package pack)
+        public static Session CreateSession(User user, Package pack, int score)
         {
-            if (user.Sessions.Count == 0)
+            if (user.Sessions == null)
             {
                 user.Sessions = new List<Session>();
             }
@@ -117,7 +117,7 @@ namespace MLG
                    context.SaveChanges();
                 }
             }
-            var newSession = new Session() { User = user, Package = pack, PackName = pack.Name };
+            var newSession = new Session() { User = user, Package = pack, PackName = pack.Name, Score=score};
             using (var context = new BDContext())
             {
                 newSession.Package = context.Packages.FirstOrDefault(x => x.Name == pack.Name);
@@ -138,6 +138,24 @@ namespace MLG
                         pack.IsAlreadyPlayed = true;
                 }
             }
+        }
+        public static List<int> GetScores(User user, List<Package> packages)
+        {
+            List<int> scores = new List<int>();
+            if (user.Sessions != null)
+            {
+                foreach (var pack in packages)
+                {
+
+                    if (user.Sessions.Any(x => x.PackName == pack.Name))
+                    {
+                        scores.Add(user.Sessions.FirstOrDefault(x => x.PackName == pack.Name).Score);
+                    }
+                    else { scores.Add(0); }
+                }
+            }
+            else { foreach (var p in packages) scores.Add(0); }
+            return scores;
         }
     }
 }
