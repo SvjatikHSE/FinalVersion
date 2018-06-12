@@ -66,8 +66,10 @@ namespace Game_UI
         }
 
         private void ShowAnswerButton_Click(object sender, RoutedEventArgs e)
-        {
-            QuestionBlock.Text = _pack.CurrentQuestion.Answer;
+        {   if (_pack.CurrentQuestion.Comments == "")
+                _pack.CurrentQuestion.Comments = "-";
+            QuestionBlock.FontSize = 32;
+            QuestionBlock.Text = $" Ответ: {_pack.CurrentQuestion.Answer} \r\n Комментарий: {_pack.CurrentQuestion.Comments}" ;
             WrongAnsButton.Visibility = Visibility.Visible;
             RightAnsButton.Visibility = Visibility.Visible;
         }

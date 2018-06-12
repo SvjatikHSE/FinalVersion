@@ -71,7 +71,7 @@ namespace Game_UI
             }
             else
             {
-                var questpage = new QuestionPage(package);
+                var questpage = new QuestionPage(package,this);
                 NavigationService.Navigate(questpage);
             }
         }       

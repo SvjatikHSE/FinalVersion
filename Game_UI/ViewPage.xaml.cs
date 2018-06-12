@@ -29,6 +29,7 @@ namespace Game_UI
             Quest = question;
             InitializeComponent();
             QuestTextBlock.Text = Quest.FieldQuestion;
+            PackNameTextBlock.Text = Quest.TournamentTittle;
            
         }
 
@@ -44,6 +45,15 @@ namespace Game_UI
             if (Quest.Comments == "")
                 Quest.Comments = "-";
             QuestTextBlock.Text = $" Ответ: {Quest.Answer} \r\n Комментарий: {Quest.Comments}";
+            AnswButton.IsEnabled = false;
+            QuestButton.IsEnabled = true;
+        }
+
+        private void QuestButton_Click(object sender, RoutedEventArgs e)
+        {
+            QuestTextBlock.Text = Quest.FieldQuestion;
+            AnswButton.IsEnabled = true;
+            QuestButton.IsEnabled = false;
         }
     }
 }
