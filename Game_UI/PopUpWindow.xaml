@@ -9,7 +9,7 @@
     <Grid>
         <StackPanel Orientation="Horizontal" Background="#000" HorizontalAlignment="Center">
             <Button Name="ViewButton" Height="70" Width="300" Margin="20 0"  Background="#333333" Foreground="#BDBDBD" FontSize="28" FontFamily="Constantia" Click="ViewButton_Click">Свободный просмотр</Button>
-            <Button Height="70" Width="300" Margin="20 0"  Background="#333333" Foreground="#BDBDBD" FontSize="28" FontFamily="Constantia">Игровой режим</Button>
+            <Button Name="GameButton" Height="70" Width="300" Margin="20 0"  Background="#333333" Foreground="#BDBDBD" FontSize="28" FontFamily="Constantia" Click="GameButton_Click">Игровой режим</Button>
         </StackPanel>
     </Grid>
 </Window>
