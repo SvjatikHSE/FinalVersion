@@ -21,7 +21,7 @@ namespace MLG.Migrations
             var absolutePath = new Uri(Assembly.GetExecutingAssembly().CodeBase).LocalPath; //was AbsolutePath but didn't work with spaces according to comments
             var directoryName = Path.GetDirectoryName(absolutePath);
             var path = Path.Combine(directoryName,seedFile.TrimStart('~').Replace('/', '\\'));
-            path = path.Replace("MLG\\MLG", "MLG\\Game_UI");
+            path = path.Replace("MLG\\bin\\Debug", "Game_UI");
 
             return path;
         }
