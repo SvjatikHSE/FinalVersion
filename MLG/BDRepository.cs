@@ -60,7 +60,6 @@ namespace MLG
                     context.Users.Add(user);
                     context.SaveChanges();
                 }
-
             users.Add(user);
         }
     }
