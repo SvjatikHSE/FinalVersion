@@ -83,6 +83,7 @@ namespace Game_UI
             else
             {
                 var theEndPage = new ResultPage(_session);
+                NavigationService.Navigate(theEndPage);
             }
         }
 
@@ -98,7 +99,9 @@ namespace Game_UI
             else
             {
                 var theEndPage = new ResultPage(_session);
+                NavigationService.Navigate(theEndPage);
             }
+
         }
     }
 }
