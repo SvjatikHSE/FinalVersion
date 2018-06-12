@@ -165,5 +165,8 @@
   <ItemGroup>
     <Resource Include="Images\background1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Files\TestFile.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
