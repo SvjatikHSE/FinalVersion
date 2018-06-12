@@ -67,8 +67,17 @@
     <Compile Include="PackPage.xaml.cs">
       <DependentUpon>PackPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PopUpWindow.xaml.cs">
+      <DependentUpon>PopUpWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionPage.xaml.cs">
+      <DependentUpon>QuestionPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RegistrationPage.xaml.cs">
       <DependentUpon>RegistrationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPage.xaml.cs">
+      <DependentUpon>ViewPage.xaml</DependentUpon>
     </Compile>
     <Page Include="InfoPage.xaml">
       <SubType>Designer</SubType>
@@ -97,7 +106,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PopUpWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="QuestionPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="RegistrationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -27,7 +27,7 @@ namespace Game_UI
             InitializeComponent();
             var testrepo = new Repository();
             testrepo.LoadData();
-            PackList.ItemsSource = testrepo.Packages;
+            PackList.ItemsSource = testrepo.packages;
             PointsList.ItemsSource = testrepo.Packages;
             CheckBoxList.ItemsSource = testrepo.Packages;
             
@@ -43,6 +43,19 @@ namespace Game_UI
                 listOfChb.Add(checkbox);
             }
             return listOfChb;
+        }
+
+        private void PackList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+            PopUpWindow popup = new PopUpWindow();
+            popup.ShowDialog();
+            if (popup.result == "q")
+            { var navlink = new QuestionPage(PackList.SelectedItem as Package);
+                NavigationService.Navigate(navlink);
+            }
+            if (popup.result == "p") { };
+            
         }
     }
 }

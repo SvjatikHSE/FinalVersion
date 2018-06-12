@@ -9,13 +9,15 @@ namespace MLG
     public class Repository
     {
         public List<Package> Packages { get; set; }
-        List<Package> packages=new List<Package>();
+        public List<Package> packages=new List<Package>();
         List<Question> questions = new List<Question>();
         List<User> users=new List<User>();
 
         public Repository()
         {
             LoadData();
+       
+
         }
 
         public void LoadData()

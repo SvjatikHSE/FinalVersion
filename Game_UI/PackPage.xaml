@@ -25,7 +25,7 @@
         <Label Foreground="White" Grid.Row="1" FontSize="40" FontFamily="Constantia" Content="Название"  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="148,0"/>
         <Label Foreground="White" Grid.Row="1" Grid.Column="1" FontSize="40" FontFamily="Constantia" Content="Сыграно"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label Foreground="White" Grid.Row="1" Grid.Column="2" FontSize="40" FontFamily="Constantia" Content="Счет"  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="32,0"/>
-        <ListBox Name="PackList" Grid.Row="2" HorizontalContentAlignment="Center" FontSize="40" FontFamily="Constantia" OpacityMask="#FF0F0F0F" DisplayMemberPath="Name" Grid.RowSpan="2" FontWeight="Bold" Opacity="0.7" Background="Black" Foreground="White" Margin="10 0 0 10"/>
+        <ListBox Name="PackList" Grid.Row="2" HorizontalContentAlignment="Center" FontSize="40" FontFamily="Constantia" OpacityMask="#FF0F0F0F" DisplayMemberPath="Name" Grid.RowSpan="2" FontWeight="Bold" Opacity="0.7" Background="Black" Foreground="White" Margin="10 0 0 10" SelectionChanged="PackList_SelectionChanged"/>
         <ListBox Name="CheckBoxList" Grid.Row="2"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" FontSize="40" FontFamily="Constantia" OpacityMask="#FF0F0F0F" Opacity="0.7" Background="Black"  Grid.RowSpan="2" Margin="0 0 0 10">
             <ListBox.ItemTemplate  >
                 <DataTemplate >
