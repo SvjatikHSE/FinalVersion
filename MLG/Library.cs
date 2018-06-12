@@ -108,7 +108,14 @@ namespace MLG
                 user.Sessions = new List<Session>();
             }
             var newSession = new Session() { User = user, Package = pack, PackName = pack.Name };
-            user.Sessions.Add(newSession);
+            using (var context = new BDContext())
+            {
+                newSession.Package = context.Packages.FirstOrDefault(x => x.Name == pack.Name);
+                newSession.User = context.Users.FirstOrDefault(x => x.Name == user.Name);
+                context.Sessions.Add(newSession);
+                context.SaveChanges();
+            }
+                user.Sessions.Add(newSession);
         }
         public static void AdaptPacksForUser(User user, List<Package> packs)
         {
