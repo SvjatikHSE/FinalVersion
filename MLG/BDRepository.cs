@@ -48,7 +48,7 @@ namespace MLG
         {
             using (var c = new BDContext())
             {
-                user = c.Users.FirstOrDefault(x => x.Name == name && x.Password == password);
+                user = c.Users.Include("Sessions").FirstOrDefault(x => x.Name == name && x.Password == password);
                 return user != null;
             }
         }

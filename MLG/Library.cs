@@ -107,7 +107,25 @@ namespace MLG
             {
                 user.Sessions = new List<Session>();
             }
+            if(user.Sessions.FirstOrDefault(x=>x.PackName==pack.Name)!=null)
+            {
+                var session = user.Sessions.FirstOrDefault(x => x.PackName == pack.Name);
+                user.Sessions.Remove(session);
+                using (var context = new BDContext())
+                {
+                   context.Sessions.Remove(context.Sessions.Where(x => x.User.Name == user.Name).FirstOrDefault(x => x.PackName == pack.Name));
+                   context.SaveChanges();
+                }
+            }
             var newSession = new Session() { User = user, Package = pack, PackName = pack.Name };
+            using (var context = new BDContext())
+            {
+                newSession.Package = context.Packages.FirstOrDefault(x => x.Name == pack.Name);
+                newSession.User = context.Users.FirstOrDefault(x => x.Name == user.Name);
+                context.Sessions.Add(newSession);
+                context.SaveChanges();
+            }
+                user.Sessions.Add(newSession);
         }
         public static void AdaptPacksForUser(User user, List<Package> packs)
         {
