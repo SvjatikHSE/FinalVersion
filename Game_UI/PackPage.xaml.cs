@@ -62,8 +62,6 @@ namespace Game_UI
             var currSession = UILogic.CreateSession(_user, package);
             UILogic.AdaptPacksForUser(_user, dBRepository.Packages);
             UpdateInfo(dBRepository.Packages);
-        }
-
-       
+        }       
     }
 }

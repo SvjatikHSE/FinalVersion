@@ -23,7 +23,6 @@ namespace MLG
             XmlDocument doc = new XmlDocument();
             doc.Load(fileName);
 
-            Name = "TestPack";
             foreach(XmlNode node in doc.DocumentElement)
             {
                 string tourFileName = node["tourFileName"].InnerText;
@@ -53,7 +52,7 @@ namespace MLG
                     Questions.Add(questionSmth);
                 }
             }
-
+            Name = Questions[1].FieldQuestion;
         }
     }
 
