@@ -35,11 +35,20 @@ namespace MLG.Migrations
             package2.LoadData(MapPath("TestFile2.xml"));
             Package package3 = new Package();
             package3.LoadData(MapPath("TestFile3.xml"));
+            Package package4 = new Package();
+            package4.LoadData(MapPath("TestFile4.xml"));
+            Package package5 = new Package();
+            package5.LoadData(MapPath("TestFile5.xml"));
+            Package package6 = new Package();
+            package6.LoadData(MapPath("TestFile6.xml"));
             using (var dbContext = new BDContext())
             {
                 dbContext.Packages.AddOrUpdate(x=>x.Name,package);
                 dbContext.Packages.AddOrUpdate(x => x.Name, package2);
                 dbContext.Packages.AddOrUpdate(x => x.Name, package3);
+                dbContext.Packages.AddOrUpdate(x => x.Name, package4);
+                dbContext.Packages.AddOrUpdate(x => x.Name, package5);
+                dbContext.Packages.AddOrUpdate(x => x.Name, package6);
                 dbContext.SaveChanges();
             }
         }

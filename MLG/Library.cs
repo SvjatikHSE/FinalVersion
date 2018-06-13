@@ -96,7 +96,9 @@ namespace MLG
         public string Author { get; set; }
         public string Comments { get; set; }
         public string TourTittle { get; set; }
+        public string PicturePath { get; set; }
         public string TournamentTittle { get; set; }
+
         
     }
     public static class UILogic

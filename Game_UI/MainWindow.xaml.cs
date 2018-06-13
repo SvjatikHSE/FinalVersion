@@ -30,8 +30,8 @@ namespace Game_UI
             var way= System.IO.Path.GetFullPath("TestFile.xml");
             repository = new DBRepository();
                 //скачиваю файл номер два
-                Information information = new Information();
-                information.DownloadInfo("https://db.chgk.info/xml/random", "TestFile3.xml");
+                //Information information = new Information();
+                //information.DownloadInfo("https://db.chgk.info/xml/random", "TestFile6.xml");
                 Package package = new Package();
             //package.LoadData("C:/Users/Анастасия/source/repos/FinalVersion2/Game_UI/TestFile.xml");
             InitializeComponent();

@@ -65,7 +65,7 @@ namespace Game_UI
             pop.ShowDialog();
             if (pop.gamemode)
             {
-                var gamepage = new GamePage(package, 23, currSession);
+                var gamepage = new GamePage(package, 1, currSession);
                 NavigationService.Navigate(gamepage);
             }
             else

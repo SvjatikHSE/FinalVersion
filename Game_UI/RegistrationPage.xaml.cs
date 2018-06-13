@@ -54,5 +54,45 @@ namespace Game_UI
         {
             NavigationService.Navigate(new Uri("MainPage.xaml", UriKind.Relative));
         }
+
+        private void NameBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.Key==Key.Enter)
+            {
+                PasswordBox1.Focus();
+            }
+        }
+
+        private void PasswordBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                PasswordBox2.Focus();
+            }
+        }
+
+        private void PasswordBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                var newUser = new User();
+                if (!String.IsNullOrEmpty(NameBox.Text) && !String.IsNullOrEmpty(PasswordBox1.Password)
+                    && PasswordBox1.Password == PasswordBox2.Password)
+                {
+                    if (!_repo.FindUser(NameBox.Text, PasswordBox1.Password, out newUser))
+                    {
+                        newUser = new User();
+                        newUser.Name = NameBox.Text;
+                        newUser.Password = PasswordBox1.Password;
+                        _repo.AddUser(newUser);
+                        var packpage = new PackPage(newUser);
+                        NavigationService.Navigate(packpage);
+                    }
+                    else { MessageBlock.Text = "Юзер с такими данным уже существует"; }
+
+                }
+                else { MessageBlock.Text = "Введены некорректные данные"; }
+            }
+        }
     }
 }

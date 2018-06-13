@@ -65,6 +65,10 @@
     <Compile Include="Migrations\201806112008149_SessionUpgrade.Designer.cs">
       <DependentUpon>201806112008149_SessionUpgrade.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806130315464_PicturePathAdded.cs" />
+    <Compile Include="Migrations\201806130315464_PicturePathAdded.Designer.cs">
+      <DependentUpon>201806130315464_PicturePathAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -83,6 +87,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806112008149_SessionUpgrade.resx">
       <DependentUpon>201806112008149_SessionUpgrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806130315464_PicturePathAdded.resx">
+      <DependentUpon>201806130315464_PicturePathAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

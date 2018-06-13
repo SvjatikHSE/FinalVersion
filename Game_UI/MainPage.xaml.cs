@@ -21,7 +21,7 @@ namespace Game_of_brains_UI
     /// Логика взаимодействия для MainPage.xaml
     /// </summary>
     public partial class MainPage : Page
-        
+
     {
         private DBRepository repository;
         private User user;
@@ -32,7 +32,7 @@ namespace Game_of_brains_UI
             user = new User();
         }
 
-        
+
         private void RegButton_Click(object sender, RoutedEventArgs e)
         {
             var regpage = new RegistrationPage(repository);
@@ -46,11 +46,43 @@ namespace Game_of_brains_UI
                 var packPage = new PackPage(user);
                 NavigationService.Navigate(packPage);
             }
-             else {
-                     MessageBlock.Text = "Введены некорректные данные";
-                    Passwordbox.Password = "";
+            else {
+                MessageBlock.Text = "Введены некорректные данные";
+                Passwordbox.Password = "";
+            }
+        }
+
+        private void TeamName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.Key==Key.Enter)
+            {
+                Passwordbox.Focus();
+            }
+        }
+
+        private void Passwordbox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                if (TeamName.Text != "")
+                {
+                    if (repository.FindUser(TeamName.Text, Passwordbox.Password, out user))
+                    {
+                        var packPage = new PackPage(user);
+                        NavigationService.Navigate(packPage);
+                    }
+                    else
+                    {
+                        MessageBlock.Text = "Введены некорректные данные";
+                        Passwordbox.Password = "";
+                    }
+                }
+                else
+                {
+                    TeamName.Focus();
+                    MessageBlock.Text = "Не заполнено поле названия команды";
                 }
             }
-            
         }
     }
+}
