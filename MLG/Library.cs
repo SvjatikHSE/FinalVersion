@@ -32,7 +32,8 @@ namespace MLG
                 string tournamentTittle = node["tournamentTitle"].InnerText;
                 string author = node["Authors"].InnerText;
                 string answer = node["Answer"].InnerText;
-                 Question questionSmth= new Question()
+                    string pictPath = node["Picture"].InnerText;
+                    Question questionSmth = new Question()
                 {
                     TourFileName = tourFileName,
                     FieldQuestion = question,
@@ -40,7 +41,8 @@ namespace MLG
                     TourTittle = tourTittle,
                     TournamentTittle = tournamentTittle,
                     Author = author,
-                    Answer=answer
+                    Answer = answer,
+                    PicturePath = pictPath
                 };
                 if(Questions==null)
                 {

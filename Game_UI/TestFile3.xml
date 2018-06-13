@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <search>
 <question>
 <tourFileName>harbr03o.2</tourFileName>
@@ -16,7 +16,7 @@
 магнитофонный рев заглушает звуки гитары. Да и меркантилен: мне жаль
 палатку, которую на прошлом фестивале порезали какие-то ублюдки (а я еще
 легко отделался)...&quot;. О каком фестивале идет речь?</Question>
-<Answer>О Грушинском.</Answer>
+<Picture/><Answer>О Грушинском.</Answer>
 <PassCriteria/>
 <Authors>Дмитрий Башук</Authors>
 <Sources>&quot;Комсомольская правда&quot;, 8.07.03 г.</Sources>
@@ -53,7 +53,7 @@
 <TextId>poltbr01.1-129</TextId>
 <Question>Какое слово получится, если соединить два китайских иероглифа &quot;метод&quot; и
 &quot;воин&quot;?</Question>
-<Answer>Стратегия.</Answer>
+<Picture/><Answer>Стратегия.</Answer>
 <PassCriteria/>
 <Authors/>
 <Sources/>
@@ -91,7 +91,7 @@
 сказал: &quot;Представьте себе кошку, хвост которой в одном городе, а голова
 в другом. Когда ее тянут за хвост, она мяукает&quot;. А какое определение он
 дал радио?</Question>
-<Answer>То же самое, только без кошки.</Answer>
+<Picture/><Answer>То же самое, только без кошки.</Answer>
 <PassCriteria/>
 <Authors>Владислав Пристинский</Authors>
 <Sources/>
@@ -128,7 +128,7 @@
 <Question>Горящая сера традиционно ассоциируется с адом. Интересно, что иногда
 участники важного действа кидают в огонь серу и антрацен. Назовите это
 действо.</Question>
-<Answer>Конклав.</Answer>
+<Picture/><Answer>Конклав.</Answer>
 <PassCriteria>Выборы папы.</PassCriteria>
 <Authors>Вадим Молдавский (Лондон)</Authors>
 <Sources>http://www.telegraph.co.uk/news/religion/the-pope/9928173/Papal-conclave-Vatican-reveals-the-secret-behind-the-chimney-smoke.html</Sources>
@@ -169,7 +169,7 @@
 <Question>В литературоведческой статье Томаса Венцловы владелец мерина Холстомера
 Никита Серпуховской назван словом, придуманным в XVIII веке. Напишите
 это слово.</Question>
-<Answer>Йэху.</Answer>
+<Picture/><Answer>Йэху.</Answer>
 <PassCriteria>Yahoo и варианты транслитерации этого слова.</PassCriteria>
 <Authors>Александр Коробейников</Authors>
 <Sources>http://silver-age.info/k-voprosu-o-tekstovoj-omonimii-puteshestvie-v-stranu-guigngnmov-i-xolstomer/8/</Sources>
@@ -207,7 +207,7 @@
 <TextId>ukrbr00.2-71</TextId>
 <Question>Дейл Карнеги утверждал, что в мире есть только один способ победить в
 споре. Какой?</Question>
-<Answer>Уклониться от спора.</Answer>
+<Picture/><Answer>Уклониться от спора.</Answer>
 <PassCriteria/>
 <Authors>Вячеслав Санников (Одесса)</Authors>
 <Sources>Мудрость столетий. - М.: Столетие, 1997. - С. 323.</Sources>
@@ -245,7 +245,7 @@
 вареной колбасы без жира, или 43 г свиной отбивной, или 35 г ветчины,
 или 31 г печеночного паштета, или 27 г копченой колбасы, или 23 г утки с
 кожей, или 100 чего?</Question>
-<Answer>Килокалорий.</Answer>
+<Picture/><Answer>Килокалорий.</Answer>
 <PassCriteria/>
 <Authors>Ольга Неумывакина (Харьков)</Authors>
 <Sources>&quot;Men's Health&quot;, 2000, N 11.</Sources>
@@ -280,7 +280,7 @@
 <TypeNum>1</TypeNum>
 <TextId>kubgimn5.4-9</TextId>
 <Question>За игрушечного медведя в магазине заплатили 70 рублей и еще половину его
-стоимости. Сколько стоила игрушка?</Question>
+стоимости. Сколько стоила игрушка?</Question><Picture/>
 <Answer>140 рублей.</Answer>
 <PassCriteria/>
 <Authors>Михаил Рогачев</Authors>
@@ -320,7 +320,7 @@
 наше время этот вариант тоже иногда встречается, но атаку Морфи никто не
 повторяет - из-за того что в официальных шахматных партиях не
 используется АЛЬФА. Назовите АЛЬФУ словом итальянского происхождения.</Question>
-<Answer>Фора.</Answer>
+<Picture/><Answer>Фора.</Answer>
 <PassCriteria/>
 <Authors>Алла Кузнецова</Authors>
 <Sources>   1. Игорь Глазков, Яков Эстрин. Королевский гамбит.
@@ -360,7 +360,7 @@ http://webchess.ru/ebook/282.html
 <Question>В конце III века до нашей эры в Риме была эпидемия моровой язвы. По
 легенде, во время эпидемии римляне отправили посольство в Грецию. Когда
 римляне приплыли к месту назначения, ОНА добровольно последовала за
-римлянами на их корабль, а потом поселилась в Риме. Назовите ЕЕ.</Question>
+римлянами на их корабль, а потом поселилась в Риме. Назовите ЕЕ.</Question><Picture/>
 <Answer>Змея.</Answer>
 <PassCriteria>Змея Асклепия.</PassCriteria>
 <Authors>Алексей Богословский (Санкт-Петербург)</Authors>
@@ -407,7 +407,7 @@ http://webchess.ru/ebook/282.html
    &lt;/раздатка&gt;
    Такой текст был помещен под названием фильма на рекламном плакате,
 который в 1912 году могли видеть жители Рима. Мы не спрашиваем вас, как
-назывался этот фильм. Восстановите последнее пропущенное слово.</Question>
+назывался этот фильм. Восстановите последнее пропущенное слово.</Question><Picture/>
 <Answer>Везувия.</Answer>
 <PassCriteria>Везувий.</PassCriteria>
 <Authors>Ирина Зайковская</Authors>
@@ -446,7 +446,7 @@ http://webchess.ru/ebook/282.html
 <Question>Молодая женщина рассказывает: &quot;Гуляли по детской площадке. Пришли к
 мнению, что у нас разные взгляды на собственного ребенка. Я ругаю дочь
 за то, что она кидается камнями, а муж ее ругает за то, что она при
-этом...&quot;. Закончите рассказ четырьмя словами.</Question>
+этом...&quot;. Закончите рассказ четырьмя словами.</Question><Picture/>
 <Answer>&quot;... не попадает в цель&quot;.</Answer>
 <PassCriteria/>
 <Authors>Дана Яковенко (Львов)</Authors>
@@ -483,7 +483,7 @@ http://webchess.ru/ebook/282.html
 <TextId>kursk94.1-22</TextId>
 <Question>Ксения Блаженная говорила, что берет в милостыню только &quot;царя на
 коне&quot;. Что это такое?</Question>
-<Answer>Копейка.</Answer>
+<Picture/><Answer>Копейка.</Answer>
 <PassCriteria/>
 <Authors/>
 <Sources/>
@@ -522,7 +522,7 @@ http://webchess.ru/ebook/282.html
    &lt;/раздатка&gt;
    Перед вами английское словосочетание, означающее предмет, который
 пригодился бы ИКСУ. По одной из версий, имя ИКСА восходит к украинскому
-слову, означающему ресницу. Назовите ИКСА.</Question>
+слову, означающему ресницу. Назовите ИКСА.</Question><Picture/>
 <Answer>Вий.</Answer>
 <PassCriteria/>
 <Authors>Артем Колесов (Москва)</Authors>
@@ -560,7 +560,7 @@ http://webchess.ru/ebook/282.html
 <TypeNum>2</TypeNum>
 <TextId>ukrbr99.10-5</TextId>
 <Question>Микроскопом, как известно, пользуются врачи и биологи. А с деятельностью
-какой службы связан прибор под названием интроскоп?</Question>
+какой службы связан прибор под названием интроскоп?</Question><Picture/>
 <Answer>Таможенной.</Answer>
 <PassCriteria/>
 <Authors>Дмитрий Башук (Харьков)</Authors>
@@ -600,7 +600,7 @@ http://webchess.ru/ebook/282.html
 со всеми своими п.
    &lt;/раздатка&gt;
    Перед вами определение и пример словоупотребления из словаря Ушакова.
-Какие два слова мы сократили до букв &quot;п&quot; и &quot;в&quot;?</Question>
+Какие два слова мы сократили до букв &quot;п&quot; и &quot;в&quot;?</Question><Picture/>
 <Answer>Причиндалы, водопроводчик.</Answer>
 <PassCriteria/>
 <Authors>Александр Чижов (Харцызск)</Authors>
@@ -638,7 +638,7 @@ http://webchess.ru/ebook/282.html
 <TextId>karen95.1-28</TextId>
 <Question>В 1955 году он аккуратно залил экзаменационный чертеж кофе. Тем, к
 общему счастью, кончилась его учеба в МИСИ. Кто он?</Question>
-<Answer>Владимир Высоцкий.</Answer>
+<Picture/><Answer>Владимир Высоцкий.</Answer>
 <PassCriteria/>
 <Authors>Карен Налбандян</Authors>
 <Sources>&quot;Студенческий меридиан&quot;, 11/1987.</Sources>
@@ -674,7 +674,7 @@ http://webchess.ru/ebook/282.html
 <TextId>azerb07.3-8</TextId>
 <Question>И Михаил Светлов, и Николай Заболоцкий рифмовали ЕЕ фамилию с &quot;бурей&quot;. А
 ЕЕ знаменитое прозвище впервые появилось незадолго перед Пасхой 1918
-года. Назовите ЕЕ.</Question>
+года. Назовите ЕЕ.</Question><Picture/>
 <Answer>Долорес Ибаррури.</Answer>
 <PassCriteria/>
 <Authors>Наиль Фарукшин (Навои), Александра Индрицан (Одесса)</Authors>
@@ -724,7 +724,7 @@ http://webchess.ru/ebook/282.html
 <Question>Многие иномарки так любимы нашим народом, что получили чисто русские
 прозвища. Например, &quot;мерин&quot; - это Мерседес, &quot;Авдотья&quot; - Ауди, &quot;бомба&quot; -
 БМВ. А какая модель носит прозвище &quot;энурез&quot;?</Question>
-<Answer>Фольксваген-пассат.</Answer>
+<Picture/><Answer>Фольксваген-пассат.</Answer>
 <PassCriteria/>
 <Authors>Григорий Остров</Authors>
 <Sources/>
@@ -760,7 +760,7 @@ http://webchess.ru/ebook/282.html
 <TextId>pribst16.6-2</TextId>
 <Question>Один из крупнейших золотоносных районов Австралии был по счастливой
 случайности открыт во время вынужденной остановки. Причиной остановки
-была потеря ЕЕ. Назовите ЕЕ.</Question>
+была потеря ЕЕ. Назовите ЕЕ.</Question><Picture/>
 <Answer>Подкова.</Answer>
 <PassCriteria/>
 <Authors>Наиль Фарукшин (Навои - Москва)</Authors>
@@ -803,7 +803,7 @@ http://webchess.ru/ebook/282.html
 конце концов, утонул у берегов земли Франца-Иосифа. ОН бы так и остался
 заурядным путешественником, никому не известным, если бы не встреча,
 произошедшая приблизительно за год до ЕГО смерти. А с кем ОН встретился?</Question>
-<Answer>С &quot;Титаником&quot;.</Answer>
+<Picture/><Answer>С &quot;Титаником&quot;.</Answer>
 <PassCriteria/>
 <Authors>Олег Луговой (Одесса)</Authors>
 <Sources>Айсберги... Откуда они? // Вокруг Света. - 2002. - N 9.</Sources>
@@ -841,7 +841,7 @@ http://webchess.ru/ebook/282.html
 после съемок на Мальте и в Мексике. Затем ИКС побывал в Японии и, только
 после того как Министерство туризма Турции подписало контракт, был
 установлен в городе Чанаккале. Назовите двумя словами объект,
-обозначенный нами как ИКС.</Question>
+обозначенный нами как ИКС.</Question><Picture/>
 <Answer>Троянский конь.</Answer>
 <PassCriteria/>
 <Authors>Максим Евланов (Харьков)</Authors>
@@ -884,7 +884,7 @@ http://webchess.ru/ebook/282.html
 немецкого учёного, фамилия которого содержит удвоенную согласную, и даже
 вписал его в кроссворд вместо Гейзенберга, чем несказанно повеселил
 старшего брата. Назовите этот закон.</Question>
-<Answer>закон бутерброда. (Буттерброда)</Answer>
+<Picture/><Answer>закон бутерброда. (Буттерброда)</Answer>
 <PassCriteria/>
 <Authors>Роман Немучинский</Authors>
 <Sources>А. и Б. Стругацкие, &quot;Повесть о дружбе и недружбе&quot;, любое издание.</Sources>
@@ -922,7 +922,7 @@ http://webchess.ru/ebook/282.html
 создают ЕГО, ведь даже не слишком талантливые выпускники могут
 рассчитывать на успешную карьеру. В Торонто ОН находится на высоте
 нескольких сотен метров. Назовите ЕГО.</Question>
-<Answer>Стеклянный пол.</Answer>
+<Picture/><Answer>Стеклянный пол.</Answer>
 <PassCriteria/>
 <Authors>Татьяна Снеговская-Арш (Лондон)</Authors>
 <Sources>   1. https://www.gov.uk/government/news/new-research-exposes-the-glass-floor-in-british-society

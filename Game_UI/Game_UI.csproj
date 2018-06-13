@@ -182,5 +182,23 @@
   <ItemGroup>
     <EmbeddedResource Include="Files\TestFile.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\20020041.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\20120234.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\20121054.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\20090371.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\20120014.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\20150251.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

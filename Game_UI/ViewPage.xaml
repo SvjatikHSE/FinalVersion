@@ -16,7 +16,8 @@
         </Grid.RowDefinitions>
         <Button Height="50" HorizontalAlignment="Left" FontSize="38" FontFamily="Constantia" Foreground="#F2F2F2" Margin="30 20 0 0" Background="#FF7C7575" OpacityMask="#FFF3E7E7" Opacity="0.8" Click="BackButton_Click">Назад</Button>
         <TextBlock Name="PackNameTextBlock" Foreground="#f2f2f2"  FontSize="40" FontFamily="Constantia"  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="58,4"/>
-        <TextBlock Name="QuestTextBlock" Grid.Row="1"  FontSize="35" FontFamily="Constantia" Foreground="#fff" Margin="20 5" TextWrapping="Wrap" ></TextBlock>
+        <Image Grid.Row="1" VerticalAlignment="Top" Name="QuestionImage"/>
+        <TextBlock VerticalAlignment="Center" Name="QuestTextBlock" Grid.Row="1"  FontSize="35" FontFamily="Constantia" Foreground="#fff" Margin="20 5" TextWrapping="Wrap" ></TextBlock>
         <Rectangle Grid.Row="1" Fill="Black" OpacityMask="#FF0F0F0F" Opacity="0.6"  Margin="10 0 10 10" IsHitTestVisible="False" ></Rectangle>
         <StackPanel Orientation="Horizontal" Grid.Row="5" HorizontalAlignment="Center">
             <Button Name="AnswButton" Content="Ответ" Margin="0 5 20 5"  Height="50" Width="370" VerticalAlignment="Center"  Background="#333333" Foreground="#BDBDBD" FontSize="40" FontFamily="Constantia" Click="AnswButton_Click" />

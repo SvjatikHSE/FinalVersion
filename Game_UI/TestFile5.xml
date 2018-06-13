@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <search>
 <question>
 <tourFileName>vodor16.4</tourFileName>
@@ -13,7 +13,7 @@
 перед европейцами возник некий вопрос. Рассказывая об этом, Анатолий
 Варшавский приводит приписываемое Парацельсу мнение о существовании
 американского ЕГО. Напишите ЕГО имя.</Question>
-<Answer>Адам.</Answer>
+<Picture/><Answer>Адам.</Answer>
 <PassCriteria/>
 <Authors>Игорь Тюнькин</Authors>
 <Sources>А.С. Варшавский. Колумбы каменного века.
@@ -55,7 +55,7 @@ http://www.flibusta.is/b/131260/read</Sources>
 гроссмейстер Каспаров бросил шахматную игру и занялся нейрохирургией,
 потому что там ИХ меньше. Ответьте максимально точно двумя словами: чего
 именно там меньше?</Question>
-<Answer>Нервных окончаний.</Answer>
+<Picture/><Answer>Нервных окончаний.</Answer>
 <PassCriteria/>
 <Authors>Евгений Неймер, Александр Шапиро</Authors>
 <Sources>http://kvkchess.dax.ru/anekdot.html</Sources>
@@ -92,7 +92,7 @@ http://www.flibusta.is/b/131260/read</Sources>
 <Question>На карикатуре Сиднея Харриса братья Райт, приземлившись после первого
 двенадцатисекундного полета, никак не могут найти свой ИКС. На восьмом
 слайде диафильма &quot;ИКС&quot; изображена собака. Какое слово мы заменили ИКСОМ?</Question>
-<Answer>Багаж.</Answer>
+<Picture/><Answer>Багаж.</Answer>
 <PassCriteria/>
 <Authors>Михаил Савченков</Authors>
 <Sources>   1. Sidney Harris, Einstein Simplified.
@@ -133,7 +133,7 @@ http://www.flibusta.is/b/131260/read</Sources>
 <Question>Говорят, что американцы, будучи на Луне, смогли увидеть Ван-ли-чанг-чинг
 невооруженным глазом. А кто лет пять назад теоретически должен был бы
 увидеть Ван-ли-чанг-чинг изнутри?</Question>
-<Answer>Дэвид Копперфильд.</Answer>
+<Picture/><Answer>Дэвид Копперфильд.</Answer>
 <PassCriteria/>
 <Authors>Евгений Мовсесов (Запорожье)</Authors>
 <Sources/>
@@ -167,8 +167,8 @@ http://www.flibusta.is/b/131260/read</Sources>
 <Type>Ч</Type>
 <TypeNum>1</TypeNum>
 <TextId>ppp9.2-14</TextId>
-<Question>(pic: 20120234.jpg)
-   293. Желаю вам найти его.</Question>
+<Question>
+   293. Желаю вам найти его.</Question><Picture>20120234.jpg</Picture>
 <Answer>Счастье.</Answer>
 <PassCriteria/>
 <Authors>Артем Колесов</Authors>
@@ -212,7 +212,7 @@ http://www.flibusta.is/b/131260/read</Sources>
    4. Жвалевский и Мытько придумали футбич, явно пародируя именно эту
 игру.
    5. Как описывает Генри Райдер Хаггард, именно у этого народа была
-игра, очень похожая на европейский баскетбол, в которую играли локтями.</Question>
+игра, очень похожая на европейский баскетбол, в которую играли локтями.</Question><Picture/>
 <Answer>   1. Жмурки, пряталки.
    2. Бейсбол.
    3. Ринго.
@@ -253,7 +253,7 @@ http://www.flibusta.is/b/131260/read</Sources>
 <TextId>ukrbr05.3-21</TextId>
 <Question>Американский политик Эдлай Стивенсон призывал ИХ всех объединяться и
 добавлял: &quot;Нам нечего терять, кроме своих желтков!&quot;. Как звучит
-пришедшее из жаргона прозвище людей, к которым он обращался?</Question>
+пришедшее из жаргона прозвище людей, к которым он обращался?</Question><Picture/>
 <Answer>Яйцеголовые.</Answer>
 <PassCriteria/>
 <Authors>Александра Индрицан (Одесса)</Authors>
@@ -291,7 +291,7 @@ http://www.flibusta.is/b/131260/read</Sources>
 <TextId>kolsk15.1-7</TextId>
 <Question>Согласно шутке, самые надежные ОНИ у малограмотных людей. Назовите тот
 из НИХ, который стал названием фильма 2001 года.</Question>
-<Answer>Рыба-меч.</Answer>
+<Picture/><Answer>Рыба-меч.</Answer>
 <PassCriteria/>
 <Authors>Алексей Мишкин (Саранск)</Authors>
 <Sources>   1. http://atkritka.com/360548/
@@ -334,7 +334,7 @@ http://www.flibusta.is/b/131260/read</Sources>
 нормальную жизнь нашего острова, интересы которого дороги всем нам&quot;.
 Одна из красавиц Коста-Рики в конце XIX века использовала из этого
 отрывка всего девять слов, чтобы создать свое произведение. Назовите два
-слова, которые ей пришлось добавить от себя.</Question>
+слова, которые ей пришлось добавить от себя.</Question><Picture/>
 <Answer>&quot;Торфяных болот&quot;.</Answer>
 <PassCriteria/>
 <Authors>Максим Евланов</Authors>
@@ -373,9 +373,8 @@ http://www.flibusta.is/b/131260/read</Sources>
 <Type>Ч</Type>
 <TypeNum>1</TypeNum>
 <TextId>gorkiy09.2-3</TextId>
-<Question>(pic: 20090371.jpg) (pic: 20090372.jpg)
-   Эти работы автор вопроса отнес к направлению в искусстве. Какому?</Question>
-<Answer>Кубизм.</Answer>
+<Question>  Эти работы автор вопроса отнес к направлению в искусстве. Какому?</Question>
+<Picture>20090371.jpg</Picture><Answer>Кубизм.</Answer>
 <PassCriteria/>
 <Authors>Владимир Островский (Киев)</Authors>
 <Sources>В вопросе.</Sources>
@@ -413,7 +412,7 @@ http://www.flibusta.is/b/131260/read</Sources>
 наследнике. В другой - о лесной жительнице и ее детях, в третьей - о
 необычном представителе пернатых. В четвертой - о наемнике. А как звали
 этого наемника?</Question>
-<Answer>Балда.</Answer>
+<Picture/><Answer>Балда.</Answer>
 <PassCriteria/>
 <Authors>Владислав Карнацевич, Ольга Зайденварг</Authors>
 <Sources/>
@@ -450,7 +449,7 @@ http://www.flibusta.is/b/131260/read</Sources>
 <TextId>paev3.1-20</TextId>
 <Question>По-латыни brachiate - рука. Название какого украшения произошло от этого
 слова?</Question>
-<Answer>Браслет</Answer>
+<Picture/><Answer>Браслет</Answer>
 <PassCriteria/>
 <Authors>Алексей Паевский, Ольга Хворова</Authors>
 <Sources>П.Я. Черных, &quot;Историко-этимологический словарь русского языка&quot;. М.,
@@ -485,13 +484,12 @@ http://www.flibusta.is/b/131260/read</Sources>
 <Type>Ч</Type>
 <TypeNum>1</TypeNum>
 <TextId>tezisy15.4-7</TextId>
-<Question>(pic: 20150251.jpg)
-   Внимание, в вопросе есть замена.
+<Question>  Внимание, в вопросе есть замена.
    На розданном вам изображении видна автобусная остановка у проходной
 саранского завода &quot;Лисма&quot;. Сооружение выполнено в виде продукции
 предприятия, из-за чего, вопреки обыкновению, имеет два ИКСА, один из
 которых скрыт от вас черным прямоугольником. Какое слово в вопросе
-заменено на ИКС?</Question>
+заменено на ИКС?</Question><Picture>20150251.jpg</Picture>
 <Answer>Цоколь.</Answer>
 <PassCriteria/>
 <Authors>Евгений Кононенко (Москва)</Authors>
@@ -542,7 +540,7 @@ Matabele, Punjabi, Ashanti, Somali, _o__a__.
 выбивалось из концепции последнее название в списке. Видимо, англичане
 тоже считали их диким племенем, населяющим земли, никогда не бывшие
 британскими. Воспроизведите название эсминца, в котором мы удалили
-согласные буквы.</Question>
+согласные буквы.</Question><Picture/>
 <Answer>Cossack.</Answer>
 <PassCriteria>Kossack, козак, казак.</PassCriteria>
 <Authors>Владимир Корн (Днепропетровск)</Authors>
@@ -577,11 +575,10 @@ Matabele, Punjabi, Ashanti, Somali, _o__a__.
 <Type>Ч</Type>
 <TypeNum>1</TypeNum>
 <TextId>zeleno12.1-8</TextId>
-<Question>(pic: 20120014.jpg)
-   Перед вами последний кадр невеселого мультфильма о ЕГО судьбе.
+<Question> Перед вами последний кадр невеселого мультфильма о ЕГО судьбе.
 Обнаруженный на Весте - температура поверхности которой может доходить
 до 85 Кельвинов - тройной кратер астрономы сравнили с НИМ. Назовите ЕГО.</Question>
-<Answer>Снеговик.</Answer>
+<Picture>20120014.jpg</Picture><Answer>Снеговик.</Answer>
 <PassCriteria/>
 <Authors>Эдуард Голуб (Киев)</Authors>
 <Sources>   1. http://mignews.com.ua/ru/articles/78437.html
@@ -617,7 +614,7 @@ Matabele, Punjabi, Ashanti, Somali, _o__a__.
 <Type>Ч</Type>
 <TypeNum>1</TypeNum>
 <TextId>kop1997.32-11</TextId>
-<Question>Как Аркадий Петрович Голиков назвал своего сына?</Question>
+<Question>Как Аркадий Петрович Голиков назвал своего сына?</Question><Picture/>
 <Answer>Тимур, конечно (Гайдар, по имени своего героя).</Answer>
 <PassCriteria/>
 <Authors>Евгений Копейка</Authors>
@@ -671,7 +668,7 @@ Matabele, Punjabi, Ashanti, Somali, _o__a__.
 практически любой предмет одежды. Карл САббаг пишет, что ОНА устроена
 подобно схеме для вязания. ОНА упоминается в названии схемы, отрывок из
 которой мы вам раздали. Назовите ЕЕ.</Question>
-<Answer>ДНК.</Answer>
+<Picture/><Answer>ДНК.</Answer>
 <PassCriteria>Молекула ДНК, цепь ДНК, цепочка ДНК, [двойная] спираль ДНК.</PassCriteria>
 <Authors>Михаил Карпук (Минск)</Authors>
 <Sources>К. Саббаг. Веревка вокруг Земли и другие сюрпризы науки. / Пер. с англ.
@@ -715,7 +712,7 @@ Matabele, Punjabi, Ashanti, Somali, _o__a__.
 <Question>В названии статьи, рассказывающей о скоростном строительстве малоэтажных
 домов с использованием теплоэффективных блоков, упоминается название
 компании, основанной в 1932 году. Назовите эту компанию.</Question>
-<Answer>&quot;Лего&quot;.</Answer>
+<Picture/><Answer>&quot;Лего&quot;.</Answer>
 <PassCriteria>&quot;ЛЕГО&quot;, &quot;The LEGO Group&quot;, &quot;Lego&quot;.</PassCriteria>
 <Authors>Максим Карачун (Краснодар)</Authors>
 <Sources>   1. http://ru.wikipedia.org/wiki/LEGO
@@ -754,7 +751,7 @@ Matabele, Punjabi, Ashanti, Somali, _o__a__.
 <Question>Сиднейцы хвалились, что у сооружения, которое они начали строить в 1924
 году, будет самый большой ИКС. Однако вскоре сиднейцы оказались в ИКСЕ:
 такое же сооружение, построенное вскоре после этого в Нью-Йорке,
-превзошло достижение австралийцев на 25 дюймов. Назовите ИКС.</Question>
+превзошло достижение австралийцев на 25 дюймов. Назовите ИКС.</Question><Picture/>
 <Answer>Пролет.</Answer>
 <PassCriteria/>
 <Authors>Наиль Фарукшин (Навои)</Authors>
@@ -797,7 +794,7 @@ Matabele, Punjabi, Ashanti, Somali, _o__a__.
 казнокрадов, спекулировавших на нищете народа. В ходе одной театральной
 премьеры того времени на сцене появилась четверка воров. Один из
 зрителей с недоумением воскликнул: &quot;А где же пятый?!&quot;. Итогом был редкий
-случай &quot;театрального перевертыша&quot;. Что же произошло?</Question>
+случай &quot;театрального перевертыша&quot;. Что же произошло?</Question><Picture/>
 <Answer>Актеры стали аплодировать зрителю.</Answer>
 <PassCriteria/>
 <Authors>Серж Корский</Authors>
@@ -835,7 +832,7 @@ Matabele, Punjabi, Ashanti, Somali, _o__a__.
 <Question>Герой современного романа, хорват по национальности, размышляет перед
 телевизором: &quot;Если мы хотим СДЕЛАТЬ ЭТО, нам нужно создать побольше
 балканских государств&quot;. Какие два слова мы заменили на слова &quot;СДЕЛАТЬ
-ЭТО&quot;?</Question>
+ЭТО&quot;?</Question><Picture/>
 <Answer>Выиграть Евровидение.</Answer>
 <PassCriteria/>
 <Authors>Александр Коробейников (Саратов - Санкт-Петербург)</Authors>
@@ -873,7 +870,7 @@ Matabele, Punjabi, Ashanti, Somali, _o__a__.
 <TypeNum>1</TypeNum>
 <TextId>inslov02.2-1</TextId>
 <Question>Переведите на древнееврейский язык &quot;бог мой свет&quot;.</Question>
-<Answer>Элеонора</Answer>
+<Picture/><Answer>Элеонора</Answer>
 <PassCriteria/>
 <Authors/>
 <Sources/>
@@ -930,7 +927,7 @@ Matabele, Punjabi, Ashanti, Somali, _o__a__.
    &lt;/раздатка&gt;
    Перед вами отрывок из стихотворения Бориса Заходера. Догадавшись,
 кого искал поэт, заполните любой из пропусков.</Question>
-<Answer>Любое из четырех слов: однофамильца, тезки, Заходеров, Борисах.</Answer>
+<Picture/><Answer>Любое из четырех слов: однофамильца, тезки, Заходеров, Борисах.</Answer>
 <PassCriteria/>
 <Authors>Анна Бабушкина</Authors>
 <Sources>Б. Заходер. Заходерзости. - М.: Век 2, 1997.</Sources>
@@ -967,7 +964,7 @@ Matabele, Punjabi, Ashanti, Somali, _o__a__.
 <Question>В романе Дэна Брауна &quot;Утраченный символ&quot; ОНА упоминается три раза. В
 некоторых вопросах этого пакета ОНА тоже указана. Вы наверняка знакомы с
 НЕЙ и сможете быстро ответить на этот вопрос. Назовите ЕЕ.</Question>
-<Answer>Википедия.</Answer>
+<Picture/><Answer>Википедия.</Answer>
 <PassCriteria/>
 <Authors>Михаил Журавский (Харьков)</Authors>
 <Sources>   1. http://www.e-reading.org.ua/bookreader.php/1000001/Braun_-_Utrachennyii_simvol.html

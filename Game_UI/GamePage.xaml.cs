@@ -29,15 +29,18 @@ namespace Game_UI
         Session _session;
 
         public GamePage(Package pack, int num, Session session )
-        {
+        {           
             InitializeComponent();
             _pack = pack;
             _pack.CurrentQuestion = pack.Questions[num - 1];
             _questionNum = num;
             QuestionBlock.Text = _pack.CurrentQuestion.FieldQuestion;
             _session = session;
-
-
+            if (_pack.CurrentQuestion.PicturePath != "")
+            {
+                var path = "Images/" + pack.CurrentQuestion.PicturePath;
+                QuestionImage.Source = BitmapFrame.Create(new Uri(@"pack://application:,,,/Images/"+_pack.CurrentQuestion.PicturePath));
+            }
         }
 
         private void TimerStartButton_Click(object sender, RoutedEventArgs e)

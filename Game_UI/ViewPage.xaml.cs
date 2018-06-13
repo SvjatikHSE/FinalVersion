@@ -30,7 +30,12 @@ namespace Game_UI
             InitializeComponent();
             QuestTextBlock.Text = Quest.FieldQuestion;
             PackNameTextBlock.Text = Quest.TournamentTittle;
-           
+            if (question.PicturePath != "")
+            {
+                var path = "Images/" + question.PicturePath;
+                QuestionImage.Source = BitmapFrame.Create(new Uri(@"pack://application:,,,/Images/" + question.PicturePath));
+            }
+
         }
 
     
