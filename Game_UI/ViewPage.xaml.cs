@@ -34,6 +34,7 @@ namespace Game_UI
             {
                 var path = "Images/" + question.PicturePath;
                 QuestionImage.Source = BitmapFrame.Create(new Uri(@"pack://application:,,,/Images/" + question.PicturePath));
+                ImageButton.Visibility = Visibility.Visible;
             }
 
         }
@@ -52,6 +53,7 @@ namespace Game_UI
             QuestTextBlock.Text = $" Ответ: {Quest.Answer} \r\n Комментарий: {Quest.Comments}";
             AnswButton.IsEnabled = false;
             QuestButton.IsEnabled = true;
+            
         }
 
         private void QuestButton_Click(object sender, RoutedEventArgs e)
@@ -59,6 +61,14 @@ namespace Game_UI
             QuestTextBlock.Text = Quest.FieldQuestion;
             AnswButton.IsEnabled = true;
             QuestButton.IsEnabled = false;
+           
+        }
+
+        private void ImageButton_Click(object sender, RoutedEventArgs e)
+        {   if (QuestionImage.Visibility == Visibility.Hidden)
+                QuestionImage.Visibility = Visibility.Visible;
+            else
+                QuestionImage.Visibility = Visibility.Hidden;
         }
     }
 }

@@ -15,6 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
 using System.Reflection;
+using System.Media;
 
 namespace Game_UI
 {
@@ -24,17 +25,21 @@ namespace Game_UI
     public partial class MainWindow : NavigationWindow
     {
         DBRepository repository;
+        
         public MainWindow()
-        {
+        {    
             var dir = System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             var way= System.IO.Path.GetFullPath("TestFile.xml");
             repository = new DBRepository();
-                //скачиваю файл номер два
-                //Information information = new Information();
-                //information.DownloadInfo("https://db.chgk.info/xml/random", "TestFile6.xml");
-                Package package = new Package();
-            package.LoadData("C:/Users/User/source/repos/MLG/Game_UI/TestFile.xml");
+          
+            //скачиваю файл номер два
+            //Information information = new Information();
+            //information.DownloadInfo("https://db.chgk.info/xml/random", "TestFile6.xml");
+            Package package = new Package();
+            package.LoadData("C:/Users/Анастасия/source/repos/FinalVersion2/Game_UI/TestFile.xml");
             InitializeComponent();
+           
+
         }
 
 

@@ -34,7 +34,7 @@ namespace Game_UI
             PackList.ItemsSource = testrepo.Packages;
             PointsList.ItemsSource = UILogic.GetScores(user, testrepo.Packages);
             CheckBoxList.ItemsSource = testrepo.Packages; ;
-
+            
         }
         private void UpdateInfo(List<Package> packages)
         {
@@ -65,7 +65,7 @@ namespace Game_UI
             pop.ShowDialog();
             if (pop.gamemode)
             {
-                var gamepage = new GamePage(package, 1, currSession);
+                var gamepage = new GamePage(package, 1, currSession,this);
                 NavigationService.Navigate(gamepage);
             }
             else

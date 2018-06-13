@@ -26,8 +26,8 @@ namespace Game_UI
         {
             InitializeComponent();
             PackNameLabel.Content = pack.Name;
+            
             QuestList.ItemsSource = pack.Questions;
-         
             QuestList.DisplayMemberPath = "Id";
             
             Ppage = packpage;

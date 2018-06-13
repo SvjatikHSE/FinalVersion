@@ -16,25 +16,32 @@
             <RowDefinition Height="263*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="3*"/>
-            <ColumnDefinition />
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="0.8*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <TextBlock HorizontalAlignment="Left" FontSize="38" FontFamily="Constantia" Foreground="#F2F2F2" Margin="30 20 0 0"><Hyperlink NavigateUri="MainPage.xaml" FontFamily="Constantia" TextDecorations="None" Foreground="#F2F2F2"> Назад</Hyperlink></TextBlock>
         <TextBlock Grid.ColumnSpan="3" Foreground="#f2f2f2"  FontSize="100" FontFamily="Constantia" Text="Выберите игровой пакет" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="58,4"/>
+        <Rectangle Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3"  Fill="Black" OpacityMask="#FF0F0F0F" Opacity="0.6"  Margin="10 0 10 10" IsHitTestVisible="False" ></Rectangle>
         <Label Foreground="White" Grid.Row="1" FontSize="40" FontFamily="Constantia" Content="Название"  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="148,0"/>
         <Label Foreground="White" Grid.Row="1" Grid.Column="1" FontSize="40" FontFamily="Constantia" Content="Сыграно"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label Foreground="White" Grid.Row="1" Grid.Column="2" FontSize="40" FontFamily="Constantia" Content="Счет"  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="32,0"/>
-        <ListBox Name="PackList" Grid.Row="2" HorizontalContentAlignment="Center" FontSize="40" FontFamily="Constantia" OpacityMask="#FF0F0F0F" DisplayMemberPath="Name" Grid.RowSpan="2" FontWeight="Bold" Opacity="0.7" Background="Black" Foreground="White" Margin="10 0 0 10" MouseDoubleClick="PackList_MouseDoubleClick"/>
-        <ListBox Name="CheckBoxList" Grid.Row="2"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" FontSize="40" FontFamily="Constantia" OpacityMask="#FF0F0F0F" Opacity="0.7" Background="Black"  Grid.RowSpan="2" Margin="0 0 0 10">
-            <ListBox.ItemTemplate  >
+        
+        <ListBox Name="PackList" Grid.Row="2"  HorizontalContentAlignment="Center" FontSize="40"  FontFamily="Constantia" OpacityMask="#FF0F0F0F" DisplayMemberPath="Name" Grid.RowSpan="2" FontWeight="Bold" Opacity="0.7" Background="Black" Foreground="White" Margin="10 0 0 10"  MouseDoubleClick="PackList_MouseDoubleClick"/>
+        <ListBox Name="CheckBoxList" Grid.Row="2"  HorizontalContentAlignment="Center"  Grid.Column="1" FontSize="40" FontFamily="Constantia" OpacityMask="#FF0F0F0F" Opacity="0.7" Background="Black"  Grid.RowSpan="2" Margin="0 0 0 10" IsHitTestVisible="False">
+            <ListBox.ItemTemplate >
                 <DataTemplate >
-                    <CheckBox x:Name="chb" Height="48" IsEnabled="False" IsChecked="{Binding IsAlreadyPlayed}" />
+                    <CheckBox  x:Name="chb" Height="24.5" VerticalContentAlignment="Center" IsEnabled="False" IsChecked="{Binding IsAlreadyPlayed}">
+                        <CheckBox.LayoutTransform>
+                            
+                            <ScaleTransform ScaleX="2" ScaleY="2"/>
+                        </CheckBox.LayoutTransform>
+                    </CheckBox>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox >
-        <ListBox Name="PointsList" Foreground="White" Grid.Row="2" Grid.Column="2"  HorizontalContentAlignment="Center" FontSize="40" FontFamily="Constantia"  Grid.RowSpan="2" Margin="0 0 10 10"  OpacityMask="#FF0F0F0F" Opacity="0.7" Background="Black" />
-        <Rectangle Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3"  Fill="Black" OpacityMask="#FF0F0F0F" Opacity="0.6"  Margin="10 0 10 10" IsHitTestVisible="False" ></Rectangle>
+        <ListBox Name="PointsList" Foreground="White" Grid.Row="2" Grid.Column="2"  HorizontalContentAlignment="Center"  FontSize="40" FontFamily="Constantia"  Grid.RowSpan="2" Margin="0 0 10 10"  OpacityMask="#FF0F0F0F" Opacity="0.7" Background="Black" IsHitTestVisible="False"/>
+       
 
     </Grid>
 </Page>

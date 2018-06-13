@@ -22,10 +22,11 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+       
         <TextBlock Grid.Column="1" Margin="0 20 50 0" HorizontalAlignment="Right" FontSize="38"><Hyperlink NavigateUri="InfoPage.xaml" FontFamily="Constantia" TextDecorations="None" Foreground="#F2F2F2"> Информация</Hyperlink></TextBlock>
         <TextBlock HorizontalAlignment="Center" Grid.Row="1" Grid.ColumnSpan="2" FontSize="100" FontFamily="Constantia" Foreground="#f2f2f2" >Game Of Brains</TextBlock>
         
-        <Rectangle Grid.Row="4" Grid.RowSpan="3" Fill="Black" OpacityMask="#FF0F0F0F" Opacity="0.5" Grid.ColumnSpan="2" Margin="150 0 150 0" ></Rectangle>
+        <Rectangle  Grid.Row="4" Grid.RowSpan="3" Fill="Black" OpacityMask="#FF0F0F0F" Opacity="0.5" Grid.ColumnSpan="2" Margin="150 0 150 0" ></Rectangle>
         <Label Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="45" Foreground="White" FontFamily="Constantia">Название команды:</Label>
         <TextBox  x:Name="TeamName"  Grid.Row="4" Grid.Column="2" Height="50" HorizontalAlignment="Left" VerticalAlignment="Center" Width="400" Foreground="#828282" TextAlignment="Center" FontSize="35" KeyDown="TeamName_KeyDown"/>
 
@@ -35,6 +36,6 @@
         <Button Name="StartButton" Content="Начать" Grid.Row="6" Height="50" Width="300" Margin="260 0 0 0" Background="#333333" Foreground="#BDBDBD" FontSize="40" FontFamily="Constantia" Click="StartButton_Click"/>
         <Button Name="RegButton" Content="Регистрация" Grid.Row="6" Grid.Column="1" Height="50" Width="300" Margin="0 0 265 0" Background="#333333" Foreground="#BDBDBD" FontSize="40" FontFamily="Constantia" Click="RegButton_Click" />
         <TextBlock FontSize="30" Name="MessageBlock" Grid.Row="5" Grid.RowSpan="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Salmon"/>
-
+        
     </Grid>
 </Page>

@@ -3,6 +3,7 @@ using MLG;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -25,14 +26,17 @@ namespace Game_of_brains_UI
     {
         private DBRepository repository;
         private User user;
+       
         public MainPage()
         {
             InitializeComponent();
             repository = new DBRepository();
             user = new User();
+            
+          
         }
 
-
+      
         private void RegButton_Click(object sender, RoutedEventArgs e)
         {
             var regpage = new RegistrationPage(repository);

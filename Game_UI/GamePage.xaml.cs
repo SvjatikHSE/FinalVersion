@@ -27,10 +27,12 @@ namespace Game_UI
         int _questionNum;
         System.Windows.Threading.DispatcherTimer timer;
         Session _session;
+        PackPage Ppage;
 
-        public GamePage(Package pack, int num, Session session )
+        public GamePage(Package pack, int num, Session session, PackPage packpage)
         {           
             InitializeComponent();
+            Ppage = packpage;
             _pack = pack;
             _pack.CurrentQuestion = pack.Questions[num - 1];
             _questionNum = num;
@@ -40,6 +42,7 @@ namespace Game_UI
             {
                 var path = "Images/" + pack.CurrentQuestion.PicturePath;
                 QuestionImage.Source = BitmapFrame.Create(new Uri(@"pack://application:,,,/Images/"+_pack.CurrentQuestion.PicturePath));
+                ImageButton.Visibility = Visibility.Visible;
             }
         }
 
@@ -49,7 +52,7 @@ namespace Game_UI
             timer.Tick += new EventHandler(timerTick);
             timer.Interval = new TimeSpan(0, 0, 1);
             timer.Start();
-          
+            
         }
         private void timerTick(object sender, EventArgs e)
         {
@@ -61,7 +64,11 @@ namespace Game_UI
             else {
                 ShowAnswerButton.IsEnabled = true;
                 timer.Stop();
-                SystemSounds.Beep.Play();
+                //SystemSounds.Beep.Play();
+
+               
+                media.Play();
+         
                 TimerStartButton.IsEnabled = false;
             }
             
@@ -71,18 +78,17 @@ namespace Game_UI
         private void ShowAnswerButton_Click(object sender, RoutedEventArgs e)
         {   if (_pack.CurrentQuestion.Comments == "")
                 _pack.CurrentQuestion.Comments = "-";
-            QuestionBlock.FontSize = 32;
+            QuestionBlock.FontSize = 30;
             QuestionBlock.Text = $" Ответ: {_pack.CurrentQuestion.Answer} \r\n Комментарий: {_pack.CurrentQuestion.Comments}" ;
             WrongAnsButton.Visibility = Visibility.Visible;
             RightAnsButton.Visibility = Visibility.Visible;
         }
-
-        private void WrongAnsButton_Click(object sender, RoutedEventArgs e)
+        private void PointButtonBehavior()
         {
             if (_questionNum != _pack.Questions.Count())
             {
                 _questionNum++;
-                var nextQuestionPage = new GamePage(_pack, _questionNum, _session);
+                var nextQuestionPage = new GamePage(_pack, _questionNum, _session, Ppage);
                 NavigationService.Navigate(nextQuestionPage);
             }
             else
@@ -90,23 +96,28 @@ namespace Game_UI
                 var theEndPage = new ResultPage(_session);
                 NavigationService.Navigate(theEndPage);
             }
+        }
+        private void WrongAnsButton_Click(object sender, RoutedEventArgs e)
+        {
+            PointButtonBehavior();
         }
 
         private void RightAnsButton_Click(object sender, RoutedEventArgs e)
         {
             _session.Score++;
-            if (_questionNum != _pack.Questions.Count())
-            {
-                _questionNum++;
-                var nextQuestionPage = new GamePage(_pack, _questionNum, _session);
-                NavigationService.Navigate(nextQuestionPage);
-            }
-            else
-            {
-                var theEndPage = new ResultPage(_session);
-                NavigationService.Navigate(theEndPage);
-            }
+            PointButtonBehavior();
 
+        }
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(Ppage);
+        }
+        private void ImageButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (QuestionImage.Visibility == Visibility.Hidden)
+                QuestionImage.Visibility = Visibility.Visible;
+            else
+                QuestionImage.Visibility = Visibility.Hidden;
         }
     }
 }

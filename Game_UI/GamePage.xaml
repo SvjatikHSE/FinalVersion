@@ -17,18 +17,22 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2.5*"/>
+            <ColumnDefinition Width="2.5*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" Height="45" FontFamily="Constantia" Foreground="#F2F2F2"  ><Hyperlink NavigateUri="MainPage.xaml" FontFamily="Constantia" TextDecorations="None" Foreground="#F2F2F2"> Выйти</Hyperlink></TextBlock>
-        <Rectangle Grid.Row="1" Grid.RowSpan="2" Fill="Black" OpacityMask="#FF0F0F0F" Opacity="0.5" Grid.ColumnSpan="2" Grid.Column="1" ></Rectangle >
-        <Image VerticalAlignment="Top" Height="200" Width="200" Name="QuestionImage" Grid.Row="1" Grid.RowSpan="2" Margin="7" Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Center"/>
-            <TextBlock Name ="QuestionBlock" Foreground="White"  Grid.Row="1" Grid.RowSpan="2" Margin="7" TextWrapping="Wrap" Grid.ColumnSpan="2" Grid.Column="1" FontFamily="Constantia" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Height="50" HorizontalAlignment="Left" FontSize="38" FontFamily="Constantia" Foreground="#F2F2F2" Margin="30 20 0 0" Background="#FF7C7575" OpacityMask="#FFF3E7E7" Opacity="0.8" Click="BackButton_Click">Выйти</Button>
+        <Button Name="ImageButton" Grid.ColumnSpan="4"  Content="Изображение" Margin="0 5 0 5"  Height="100" Width="400" VerticalAlignment="Center" HorizontalAlignment="Center" Background="#333333" Foreground="#BDBDBD" FontSize="40" FontFamily="Constantia" Visibility="Hidden"  Click="ImageButton_Click" />
+        <Rectangle Grid.Row="1" Grid.RowSpan="2" Fill="Black" OpacityMask="#FF0F0F0F" Opacity="0.5" Grid.ColumnSpan="2" Grid.Column="1" >
+        </Rectangle >
+        <TextBlock Name ="QuestionBlock" Foreground="White"  Grid.Row="1" Grid.RowSpan="2" Margin="7" TextWrapping="Wrap" Grid.ColumnSpan="2" Grid.Column="1" FontFamily="Constantia" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Image VerticalAlignment="Top"   Name="QuestionImage" Grid.Row="1" Grid.RowSpan="2" Margin="7" Grid.ColumnSpan="4"  HorizontalAlignment="Center" Visibility="Hidden" />
         <Button Name="TimerStartButton" Margin="0 5 5 5"  Content="Запустить &#xD;&#xA;   таймер" Grid.Row="3" Grid.Column="1" Background="#333333" Foreground="#BDBDBD" FontSize="32" FontFamily="Constantia" Click="TimerStartButton_Click"/>
         <Button Name="ShowAnswerButton" Margin="5 5 0 5" Content="Показать &#xD;&#xA;    ответ" Grid.Row="3" Grid.Column="2" Background="#333333" Foreground="#BDBDBD" FontSize="32" FontFamily="Constantia" Click="ShowAnswerButton_Click" IsEnabled="False"/>
         <Button Name="RightAnsButton" Opacity="0.6" Background="#FF056C05" Grid.RowSpan="2" Grid.Row="1" Margin="5" Grid.Column="3" Visibility="Hidden" Content="Верно" FontFamily="Constantia" Foreground="#F2F2F2" FontSize="32"  Click="RightAnsButton_Click"/>
         <Button Name="WrongAnsButton" Opacity="0.6" Background="#FF6E0909" Grid.RowSpan="2" Grid.Row="1" Margin="5" Visibility="Hidden" Content="Неверно" FontFamily="Constantia" Foreground="#F2F2F2" FontSize="32" Click="WrongAnsButton_Click"/>
         <TextBlock Name="TimerBlock" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontFamily="Constantia" Grid.Column="3" />
+        
+        <MediaElement Source="Sounds/Sound_18603.mp3" LoadedBehavior="Manual" Name="media"></MediaElement>
     </Grid>
 </Page>
