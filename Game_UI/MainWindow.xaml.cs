@@ -35,8 +35,6 @@ namespace Game_UI
             //скачиваю файл номер два
             //Information information = new Information();
             //information.DownloadInfo("https://db.chgk.info/xml/random", "TestFile6.xml");
-            Package package = new Package();
-            package.LoadData("C:/Users/Анастасия/source/repos/FinalVersion2/Game_UI/TestFile.xml");
             InitializeComponent();
            
 

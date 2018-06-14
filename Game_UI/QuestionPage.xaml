@@ -19,7 +19,7 @@
         <Rectangle Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3"  Fill="Black" OpacityMask="#FF0F0F0F" Opacity="0.6"  Margin="10 0 10 10" IsHitTestVisible="False" ></Rectangle>
         <TextBlock  Foreground="#f2f2f2"  FontSize="100" FontFamily="Constantia" Text="Выберите вопрос" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="58,4"/>
         <Label Foreground="White" Grid.Row="1" FontSize="50" FontFamily="Constantia" Name="PackNameLabel" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="148,0" Background="{x:Null}"/>
-        <ListBox Name="QuestList" Grid.Row="2" HorizontalContentAlignment="Center" FontSize="40" FontFamily="Constantia" OpacityMask="#FF0F0F0F"  Grid.RowSpan="2" FontWeight="Bold" Opacity="0.7" Background="Black" Foreground="White" Margin="10 0 10 10" MouseDoubleClick="QuestList_MouseDoubleClick"/>
+        <ListBox Name="QuestList" Grid.Row="2" HorizontalContentAlignment="Center" FontSize="40" FontFamily="Constantia" OpacityMask="#FF0F0F0F"  Grid.RowSpan="2" FontWeight="Bold" Opacity="0.7" Background="Black" Foreground="White" Margin="10 0 10 10" MouseDoubleClick="QuestList_MouseDoubleClick" />
         
     </Grid>
 </Page>

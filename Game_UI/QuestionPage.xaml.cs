@@ -26,9 +26,22 @@ namespace Game_UI
         {
             InitializeComponent();
             PackNameLabel.Content = pack.Name;
-            
-            QuestList.ItemsSource = pack.Questions;
-            QuestList.DisplayMemberPath = "Id";
+            List<Question> shortQuestions = new List<Question>();
+            for(int i=0;i<pack.Questions.Count;i++)
+            {
+                if(pack.Questions[i].FieldQuestion.Length<=100)
+                {
+                    shortQuestions.Add(pack.Questions[i]);
+                }
+                else
+                {
+                    pack.Questions[i].FieldQuestion.Substring(101);
+                    pack.Questions[i].FieldQuestion += "...";
+                    shortQuestions.Add(pack.Questions[i]);
+                }
+            }
+            QuestList.ItemsSource = shortQuestions;
+            QuestList.DisplayMemberPath = "FieldQuestion";
             
             Ppage = packpage;
         }
