@@ -57,21 +57,24 @@ namespace Game_UI
         private void PackList_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             var package = PackList.SelectedItem as Package;
-            package.IsAlreadyPlayed = true;
-            var currSession = UILogic.CreateSession(_user, package, 0);
-            UILogic.AdaptPacksForUser(_user, dBRepository.Packages);
-            UpdateInfo(dBRepository.Packages);
-            var pop = new PopUpWindow();
-            pop.ShowDialog();
-            if (pop.gamemode)
+            if (package != null)
             {
-                var gamepage = new GamePage(package, 1, currSession,this);
-                NavigationService.Navigate(gamepage);
-            }
-            else
-            {
-                var questpage = new QuestionPage(package,this);
-                NavigationService.Navigate(questpage);
+                package.IsAlreadyPlayed = true;
+                var currSession = UILogic.CreateSession(_user, package, 0);
+                UILogic.AdaptPacksForUser(_user, dBRepository.Packages);
+                UpdateInfo(dBRepository.Packages);
+                var pop = new PopUpWindow();
+                pop.ShowDialog();
+                if (pop.gamemode)
+                {
+                    var gamepage = new GamePage(package, 1, currSession, this);
+                    NavigationService.Navigate(gamepage);
+                }
+                else
+                {
+                    var questpage = new QuestionPage(package, this);
+                    NavigationService.Navigate(questpage);
+                }
             }
         }       
     }

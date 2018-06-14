@@ -23,7 +23,7 @@ namespace Game_UI
     public partial class GamePage : Page
     {
         Package _pack;
-        int _time = 3;
+        int _time = 60;
         int _questionNum;
         System.Windows.Threading.DispatcherTimer timer;
         Session _session;
@@ -58,6 +58,7 @@ namespace Game_UI
         {
             if (_time > 0)
             {
+                if (_time < 11) { TimerBlock.Foreground = new SolidColorBrush(Colors.Red); }
                 _time--;
                 TimerBlock.Text = string.Format($"00:{_time}");
             }
