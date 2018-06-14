@@ -52,7 +52,8 @@ namespace Game_UI
             timer.Tick += new EventHandler(timerTick);
             timer.Interval = new TimeSpan(0, 0, 1);
             timer.Start();
-            
+            TimerStartButton.IsEnabled = false;
+
         }
         private void timerTick(object sender, EventArgs e)
         {
@@ -61,15 +62,13 @@ namespace Game_UI
                 if (_time < 11) { TimerBlock.Foreground = new SolidColorBrush(Colors.Red); }
                 _time--;
                 TimerBlock.Text = string.Format($"00:{_time}");
+                if (_time == 59) { TimerStop.Visibility = Visibility.Visible; }
             }
             else {
                 ShowAnswerButton.IsEnabled = true;
                 timer.Stop();
                 //SystemSounds.Beep.Play();
-
-               
                 media.Play();
-         
                 TimerStartButton.IsEnabled = false;
             }
             
@@ -119,6 +118,15 @@ namespace Game_UI
                 QuestionImage.Visibility = Visibility.Visible;
             else
                 QuestionImage.Visibility = Visibility.Hidden;
+        }
+
+        private void TimerStop_Click(object sender, RoutedEventArgs e)
+        {
+            TimerStop.IsEnabled = false;
+            ShowAnswerButton.IsEnabled = true;
+            timer.Stop();
+            media.Play();
+            TimerStartButton.IsEnabled = false;
         }
     }
 }

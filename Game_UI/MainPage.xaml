@@ -31,7 +31,7 @@
         <TextBox  x:Name="TeamName"  Grid.Row="4" Grid.Column="2" Height="50" HorizontalAlignment="Left" VerticalAlignment="Center" Width="400" Foreground="#828282" TextAlignment="Center" FontSize="35" KeyDown="TeamName_KeyDown"/>
 
         <Label Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="45" Foreground="White" Grid.RowSpan="3" Margin="0,60.6,5,66" FontFamily="Constantia">Пароль:</Label>
-        <PasswordBox  x:Name="Passwordbox" PasswordChar="*"  Grid.Row="5" Grid.Column="2" Height="50" HorizontalAlignment="Left" Width="400" Foreground="#828282" FontSize="35" KeyDown="Passwordbox_KeyDown"/>
+        <PasswordBox  x:Name="Passwordbox" PasswordChar="*"  HorizontalContentAlignment="Center" Grid.Row="5" Grid.Column="2" Height="50" HorizontalAlignment="Left" Width="400" Foreground="#828282" FontSize="35" KeyDown="Passwordbox_KeyDown"/>
 
         <Button Name="StartButton" Content="Начать" Grid.Row="6" Height="50" Width="300" Margin="260 0 0 0" Background="#333333" Foreground="#BDBDBD" FontSize="40" FontFamily="Constantia" Click="StartButton_Click"/>
         <Button Name="RegButton" Content="Регистрация" Grid.Row="6" Grid.Column="1" Height="50" Width="300" Margin="0 0 265 0" Background="#333333" Foreground="#BDBDBD" FontSize="40" FontFamily="Constantia" Click="RegButton_Click" />

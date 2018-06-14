@@ -32,7 +32,7 @@
         <Button Name="RightAnsButton" Opacity="0.6" Background="#FF056C05" Grid.RowSpan="2" Grid.Row="1" Margin="5" Grid.Column="3" Visibility="Hidden" Content="Верно" FontFamily="Constantia" Foreground="#F2F2F2" FontSize="32"  Click="RightAnsButton_Click"/>
         <Button Name="WrongAnsButton" Opacity="0.6" Background="#FF6E0909" Grid.RowSpan="2" Grid.Row="1" Margin="5" Visibility="Hidden" Content="Неверно" FontFamily="Constantia" Foreground="#F2F2F2" FontSize="32" Click="WrongAnsButton_Click"/>
         <TextBlock Name="TimerBlock" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontFamily="Constantia" Grid.Column="3" />
-        
+        <Button Name="TimerStop"  Content="Ответить досрочно" Grid.Column="2" Grid.ColumnSpan="2" Background="#333333" Foreground="#BDBDBD" FontSize="30" Height="40" Width="300" FontFamily="Constantia" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10" Visibility="Hidden" Click="TimerStop_Click"/>
         <MediaElement Source="Sounds/Sound_18603.mp3" LoadedBehavior="Manual" Name="media"></MediaElement>
     </Grid>
 </Page>
