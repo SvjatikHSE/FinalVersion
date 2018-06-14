@@ -40,7 +40,7 @@ namespace Game_UI
                     shortQuestions.Add(
                         new Question()
                         {
-                            FieldQuestion=pack.Questions[i].FieldQuestion.Substring(0,100),
+                            FieldQuestion=pack.Questions[i].FieldQuestion.Substring(0,100)+"...",
                         });
                       
                 }
