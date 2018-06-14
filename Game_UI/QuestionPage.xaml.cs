@@ -22,9 +22,11 @@ namespace Game_UI
     public partial class QuestionPage : Page
     {
         PackPage Ppage;
+        Package package;
         public QuestionPage(Package pack,PackPage packpage)
         {
             InitializeComponent();
+            package = pack;
             PackNameLabel.Content = pack.Name;
             List<Question> shortQuestions = new List<Question>();
             for(int i=0;i<pack.Questions.Count;i++)
@@ -35,9 +37,12 @@ namespace Game_UI
                 }
                 else
                 {
-                    pack.Questions[i].FieldQuestion.Substring(101);
-                    pack.Questions[i].FieldQuestion += "...";
-                    shortQuestions.Add(pack.Questions[i]);
+                    shortQuestions.Add(
+                        new Question()
+                        {
+                            FieldQuestion=pack.Questions[i].FieldQuestion.Substring(0,100),
+                        });
+                      
                 }
             }
             QuestList.ItemsSource = shortQuestions;
@@ -55,7 +60,15 @@ namespace Game_UI
 
         private void QuestList_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            NavigationService.Navigate(new ViewPage(QuestList.SelectedItem as Question, this));
+            var shortQuestion = QuestList.SelectedItem as Question;
+            for(int i=0;i<package.Questions.Count;i++)
+            {
+                if(package.Questions[i].FieldQuestion.Substring(0,10)==shortQuestion.FieldQuestion.Substring(0,10))
+                {
+                    shortQuestion = package.Questions[i];
+                }
+            }
+            NavigationService.Navigate(new ViewPage(shortQuestion, this));
         }
     }
 }
