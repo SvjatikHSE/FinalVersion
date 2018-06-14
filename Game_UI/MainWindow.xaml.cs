@@ -41,9 +41,6 @@ namespace Game_UI
         }
 
 
-    private void NavigationWindow_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            this.DragMove();
-        }
+ 
     }
 }

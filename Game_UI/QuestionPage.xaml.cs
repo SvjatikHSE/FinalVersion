@@ -31,7 +31,7 @@ namespace Game_UI
             List<Question> shortQuestions = new List<Question>();
             for(int i=0;i<pack.Questions.Count;i++)
             {
-                if(pack.Questions[i].FieldQuestion.Length<=100)
+                if(pack.Questions[i].FieldQuestion.Length<=70)
                 {
                     shortQuestions.Add(pack.Questions[i]);
                 }
@@ -40,7 +40,7 @@ namespace Game_UI
                     shortQuestions.Add(
                         new Question()
                         {
-                            FieldQuestion=pack.Questions[i].FieldQuestion.Substring(0,100),
+                            FieldQuestion=pack.Questions[i].FieldQuestion.Substring(0,70)+ "...\r\n",
                         });
                       
                 }

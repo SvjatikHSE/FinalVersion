@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Game_UI"
         mc:Ignorable="d"
-        Title="Game of Brains"  WindowState="Maximized" Source="MainPage.xaml" ResizeMode="CanMinimize" MouseDown="NavigationWindow_MouseDown" FontFamily="Constantia"  >
+        Title="Game of Brains"  WindowState="Maximized" Source="MainPage.xaml" ResizeMode="CanMinimize"  FontFamily="Constantia"  >
     
     <Window.Background>
         
