@@ -29,7 +29,9 @@ namespace Game_UI
             Quest = question;
             InitializeComponent();
             QuestTextBlock.Text = Quest.FieldQuestion;
-            PackNameTextBlock.Text = Quest.TournamentTittle;
+            if (Quest.Author == "")
+                Quest.Author = "-";
+            AuthorTextBlock.Text = $"Автор: {Quest.Author}";
             if (question.PicturePath != "")
             {
                 var path = "Images/" + question.PicturePath;
